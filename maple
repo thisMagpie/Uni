@@ -1,0 +1,4 @@
+sigma:= (rp, rq, theta) -> subs(r=1, rp=1.1, rq=10,-diff(V(r, rp, rq, theta),r));
+
+plot([Sigma(rp, rq, theta)], theta=0..3, colour=[blue]);
+
