@@ -1,0 +1,30 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{tikz}
+\pgfplotsset{width=7cm,compat=1.7}
+
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[legend pos = south east,  /pgf/number format/.cd, , ylabel=${\Delta {S}}$, xlabel={Time [min]}, xmin=0,xmax=150]
+
+%\addplot[mark size=0.5, only marks,
+     % error bars/.cd,
+    %    y dir=both, y explicit,
+       % x dir=both, x explicit
+      %]
+   %table [x error index=2, y error index=3]
+  % {data_march26.txt};
+  % \addplot[no marks,color=black]
+   % table [x index = 0, y index= 1]
+   % {data_march26.txt}; 
+    \addplot[no markers,color=blue]
+    table [x index = 0, y index= 1]
+    {ledred03.asc}; 
+
+
+\end{axis}
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,252 @@
+\documentclass[12pt]{article}
+\usepackage{amsthm} 
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[hmargin=1.5cm,vmargin=1.5cm]{geometry}
+\usepackage[super,comma,sort&compress, square]{natbib}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{float}
+\usepackage{csvsimple}
+\usepackage{gnuplottex}
+\usepackage{todonotes}
+\usepackage{csquotes}
+\usepackage{pgfkeys}
+
+
+\pgfplotsset{compat=1.7}
+\usepackage[english]{babel}
+\pgfplotsset{every axis y label/.append style={xshift=1.5em}}
+
+
+
+\usepackage{hyperref} %% to turn the links clickable and load this before cleveref
+\usepackage{cleveref}
+\crefname{table}{table}{tables}
+\Crefname{table}{Table}{Tables}
+\crefname{figure}{figure}{figures}
+\Crefname{figure}{Figure}{Figures}
+\crefname{equation}{equation}{equations}
+\Crefname{Equation}{Equation}{Equation}
+
+
+\title{Electromagnetism Hand in 4}
+\author{s0946936}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Question I. For a medium of conductivity $\sigma$
+derive the following equation for the
+B field}
+
+\begin{equation}
+\label{eq:identity}
+ \nabla^{2}\mathbf{B}=\epsilon\mu \frac{\partial^{2} \mathbf{B}}{\partial t^{2}}+\sigma\mu \frac{\partial \mathbf{B}}{\partial t}
+\end{equation}
+
+\subsection*{I. Answer}
+\begin{equation}
+\label{eq:maxwell4}
+\nabla \times \mathbf{B} =\mu\left( \mathbf{J} +\epsilon \frac{\partial \mathbf{E}} {\partial t} \right)
+\end{equation}
+
+
+\begin{equation}
+\label{eq:hb}
+\frac{1}{\mu}\nabla \times \mathbf{B} =\nabla \times \mathbf{H}
+\end{equation}
+\noindent
+Take the curl of \cref{eq:hb}
+
+\begin{equation}
+\label{eq:curl}
+\text{RHS} = \nabla \times (\nabla \times \mathbf{H} )= \mu \nabla \times  \mathbf{J} +\mu \epsilon \nabla\times \frac{\partial \mathbf{E}} {\partial t} =
+\nabla \times \mathbf{J} +\epsilon \nabla \times \frac{\partial \mathbf{E}} {\partial t} 
+\end{equation}
+
+\begin{equation}
+\label{eq:ohm}
+\mathbf{J}=\sigma\mathbf{E}
+\end{equation}
+\noindent
+Substitution of \cref{eq:ohm} into \cref{eq:curl} yields 
+
+
+\begin{equation}
+\label{eq:curlohm}
+ \sigma\nabla \times \mathbf{E}+ \epsilon \nabla \times  \frac{\partial \mathbf{E}} {\partial t} 
+\end{equation}
+\noindent
+Where it is possible to substitute Maxwell's III as shown in \cref{eq:maxwell3} into \cref{eq:curl} to get and expression for the RHS as is shown in \cref{eq:rhs}
+
+\begin{equation}
+\label{eq:maxwell3}
+\nabla \times \mathbf{E} = - \frac{\partial \mathbf{B}} {\partial t}
+\end{equation}
+
+\begin{equation}
+\label{eq:rhs}
+\epsilon \nabla \times\frac{\partial \mathbf{E}} {\partial t} -\sigma\frac{\partial \mathbf{B}} {\partial t} 
+\end{equation}
+
+The expression seen in \cref{eq:rhs}  can then be simplified as shown in \cref{eq:rhsa}.
+\begin{equation}
+\label{eq:rhsa}
+\text{RHS}=-\epsilon\frac{\partial^{2} \mathbf{B}} {\partial t^{2}} - \sigma\frac{\partial \mathbf{B}} {\partial t}
+\end{equation}
+
+\noindent
+Now we can examine the LHS by starting with the curl of \cref{eq:hb}, as we did for the RHS expression.
+
+\begin{equation}
+\label{eq:lhs}
+\text{LHS }=\nabla \times (\nabla \times \mathbf{H} )=\frac{1}{\mu}(\nabla \times (\nabla \times \mathbf{B} ))=\frac{1}{\mu}\nabla(\nabla\cdot\mathbf{B})-(\nabla^{2}\mathbf{B})
+\end{equation}
+
+\noindent
+Where $\nabla(\nabla\cdot\mathbf{B})=0$ \cref{eq:lhs} becomes 
+
+\begin{equation}
+\text{LHS}=-\frac{1}{\mu}\nabla^{2}\mathbf{B}
+\end{equation}
+
+\noindent
+The last step is to simply equate \cref{eq:rhsa} by  \cref{eq:lhs} as is shown in \cref{eq:penultimate}, then multiply the whole thing through by $-\mu$ we get the same expression as is in \cref{eq:identity}
+
+
+
+\begin{equation}
+\label{eq:penultimate}
+\text{LHS}=-\frac{1}{\mu}\nabla^{2}\mathbf{B}=-\epsilon\frac{\partial^{2} \mathbf{B}} {\partial t^{2}} - \sigma\frac{\partial \mathbf{B}} {\partial t}
+\end{equation}
+
+
+
+\section*{II. Show that the plane wave in \cref{eq:planewave} gives the dispersion relation shown in equation \cref{eq:relation} }
+
+\begin{equation}
+\label{eq:planewave}
+B=B_{0}e^{kx-\omega{t}}
+\end{equation}
+
+\begin{equation}
+\label{eq:relation}
+k=\sqrt{\mu\omega(\epsilon\omega+\sigma})
+\end{equation}
+
+The phase difference between the magnetic and electric field is given by the complex phase  k. Using the criterion we can infer some characteristics about the wave depending on this ratio, shown in \cref{eq:criterion}. 
+
+\begin{equation}
+\label{eq:criterion}
+\frac{\sigma}{\epsilon\omega}
+\end{equation}
+
+If we recognise that $k$ is in the form of its real part $alpha$ and its imaginary part $\beta$
+
+\begin{equation}
+\label{eq:complex}
+\mathbf{k}=\alpha+i\beta
+\end{equation}
+
+Then we have 
+
+\begin{equation}
+\label{eq:alpha}
+\alpha=\sqrt{\mu\epsilon\omega^{2}}
+\end{equation}
+
+\begin{equation}
+\label{eq:beta}
+\beta=\omega\sqrt{\sigma\mu}
+\end{equation}
+
+For a good insulator we have the criterion outlined by \cref{{eq:insulator}}
+
+\begin{equation}
+\label{eq:insulator}
+\sigma \ll \epsilon\omega\implies \alpha=\omega \sqrt{\mu\epsilon}
+\end{equation}
+
+
+A phase diagram of a good conductor is shown in \cref{fig:phase}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm, height=3cm]{Phasor.pdf}
+\caption{A rough sketch of the phase diagram $\beta$ is in the complex plane and $\alpha$ is in the real plane}
+\label{fig:phase}
+\end{figure}
+
+
+In the special case where the conductor is a good conductor \cref{eq:good}
+\begin{equation}
+\label{eq:good}
+\beta\approx \frac{\sqrt{\omega\mu\sigma}}{\sqrt{2}}\approx \alpha
+\end{equation}
+
+Which leads to the result that the phase is found by \cref{eq:phase}
+\begin{equation}
+\label{eq:phaseConductor}
+\phi=\mathrm{tan}^{-1}\left(\frac{\beta}{\alpha}\right)\approx 1
+\end{equation}
+
+This means the phase angle is $\approx\frac{\pi}{4}$
+
+
+
+
+
+
+
+
+\section*{Question IV. Show using the third Maxwell equation that the complex amplitudes of the magnetic and electric field are related by \cref{eq:re1}}
+
+
+Usung Maxwell's III as expressed in \cref{eq:maxwell3}
+
+\begin{equation}
+\label{eq:re1}
+\mathbf{B_{0}}=\frac{k}{\omega} \mathbf{E}
+\end{equation}
+
+\begin{equation}
+\label{eq:re2}
+\mathbf{k}\times\mathbf{E_{0}}=\omega \mathbf{B_{0}}
+\end{equation}
+
+
+If a material were not conducting the electric and magnetic fields would be perpendicular to the motion, thus the wave is a transverse wave. The complex wave  vector$k$
+represents a magnetic field and an electric field that has a phase given by \cref{eq:phase}. In an insulator, in the complex wave vector will be in phase between the magnetic and electric field i.e. $\phi=0$. This means the imaginary part drops out and  
+
+\begin{equation}
+\label{eq:re3}
+\mathbf{B_{0}}=\frac{\mathbf{k}}{\omega } \times\mathbf{E_{0}}
+\end{equation}
+
+
+\begin{equation}
+\label{eq:re2}
+B_{0}=\left|\frac{\mathbf{k}}{\omega } \times\mathbf{E_{0}}\right |
+\end{equation}
+
+\begin{equation}
+\label{eq:phase}
+\phi=\mathrm{tan}^{-1}\left(\frac{\beta}{\alpha}\right)
+\end{equation}
+However, in a conductor the complex wave vector $k$ gives a phase difference between the electric and magnetic fields. If the conductor is a \enquote{good} one, then \cref{eq:good} is a fair approximation of the relationship between the electric and magnetic phase with respect to the complex wave vector. 
+
+\begin{equation}
+\label{eq:good}
+\mathrm{tan}{\phi}=\left(\frac{\beta}{\alpha}\right)\approx 1
+\end{equation}
+
+
+
+
+
+\end{document}

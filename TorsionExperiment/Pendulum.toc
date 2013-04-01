@@ -1,0 +1,15 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Historical Background}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Theory}{3}{subsection.1.2}
+\contentsline {section}{\numberline {2}Experimental Method}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Equipment}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Preparation and Calibration}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Acceleration Method}{6}{subsection.2.3}
+\contentsline {section}{\numberline {3}Measurement by Equilibrium Positions}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}End-deflection Method}{6}{subsection.3.1}
+\contentsline {section}{\numberline {4}Results and Discussion}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Limitations of the Experimental Method and Future Consideration}{7}{subsection.4.1}
+\contentsline {section}{\numberline {5}Conclusion}{7}{section.5}
+\contentsline {section}{\numberline {6}Acknowledgements}{7}{section.6}
+\contentsline {section}{\numberline {7}Appendix}{7}{section.7}

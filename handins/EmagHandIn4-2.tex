@@ -1,0 +1,359 @@
+\documentclass[12pt]{article}
+\usepackage{amsthm} 
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[hmargin=1.5cm,vmargin=1.5cm]{geometry}
+\usepackage[super,comma,sort&compress, square]{natbib}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{float}
+\usepackage{csvsimple}
+\usepackage{gnuplottex}
+\usepackage{todonotes}
+\usepackage{csquotes}
+\usepackage{pgfkeys}
+
+
+\pgfplotsset{compat=1.7}
+\usepackage[english]{babel}
+\pgfplotsset{every axis y label/.append style={xshift=1.5em}}
+
+
+
+\usepackage{hyperref} %% to turn the links clickable and load this before cleveref
+\usepackage{cleveref}
+\crefname{table}{table}{tables}
+\Crefname{table}{Table}{Tables}
+\crefname{figure}{figure}{figures}
+\Crefname{figure}{Figure}{Figures}
+\crefname{equation}{equation}{equations}
+\Crefname{Equation}{Equation}{Equation}
+
+
+\title{Electromagnetism Hand in 4}
+\author{s0946936}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Question I. For a medium of conductivity $\sigma$ derive the following equation for the B field}
+
+\begin{equation}
+\label{eq:identity}
+ \nabla^{2}\mathbf{B}=\epsilon\mu \frac{\partial^{2} \mathbf{B}}{\partial t^{2}}+\sigma\mu \frac{\partial \mathbf{B}}{\partial t}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%% 
+%                       I. Answer                           %
+%%%%%%%%%%%%%%%%%%%%
+\subsection*{I. Answer}
+
+Maxwell's IV equation is stated in \cref{eq:maxwell4}
+\begin{equation}
+\label{eq:maxwell4}
+\nabla \times \mathbf{B} =\mu\left( \mathbf{J} +\epsilon \frac{\partial \mathbf{E}} {\partial t} \right)
+\end{equation}
+By taking the curl of \cref{eq:maxwell4} we arrive at the result seen in \cref{eq:curl} 
+\begin{equation}
+\label{eq:curl}
+\nabla\times \nabla \times \mathbf{B}=\nabla \times \mu\left( \mathbf{J} +\epsilon \frac{\partial \mathbf{E}} {\partial t} \right)=
+\mu \nabla \times  \mathbf{J} +\mu \epsilon \nabla\times \frac{\partial \mathbf{E}} {\partial t}
+\end{equation}
+Remembering the ohm's law shown in \cref{eq:ohm} we can substitute into \cref{eq:curl} to get \cref{eq:curlohm}
+\begin{equation}
+\label{eq:ohm}
+\mathbf{J}=\sigma\mathbf{E}
+\end{equation}
+\noindent
+Substitution of \cref{eq:ohm} into \cref{eq:curl} yields 
+
+\begin{equation}
+\label{eq:curlohm}
+ \nabla \times\nabla \times \mathbf{B}=\mu \sigma\nabla \times \mathbf{E}+\mu \epsilon \nabla \times  \frac{\partial \mathbf{E}} {\partial t} 
+\end{equation}
+\noindent
+Maxwell's III as shown in \cref{eq:maxwell3} allows us to perform another substitution, into \cref{eq:curlohm} which yields an expression for the RHS as is shown in \cref{eq:rhs}
+
+\begin{equation}
+\label{eq:maxwell3}
+\nabla \times \mathbf{E} = - \frac{\partial \mathbf{B}} {\partial t}
+\end{equation}
+
+\begin{equation}
+\label{eq:rhs}
+\text{RHS}=-\mu\epsilon\frac{\partial^{2} \mathbf{B}} {\partial t^{2}} - \mu\sigma\frac{\partial \mathbf{B}} {\partial t}
+\end{equation}
+The LHS is much more straight forward because it is possible to use the common identity from \cref{eq:id2} to get the result in \cref{eq:lhs2}.
+
+\begin{equation}
+\label{eq:id2}
+\nabla \times \left( \nabla \times \mathbf{\psi} \right) = \nabla(\nabla \cdot \mathbf{\psi}) - \nabla^{2}\mathbf{\psi}
+\end{equation}
+
+\begin{equation}
+\label{eq:lhs}
+\text{LHS }=(\nabla \times (\nabla \times \mathbf{B} ))=\nabla(\nabla\cdot\mathbf{B})-\nabla^{2}\mathbf{B}
+\end{equation}
+
+\noindent
+Where $\nabla(\nabla\cdot\mathbf{B})=0$ \cref{eq:lhs} becomes \cref{eq:rhs}
+
+\begin{equation}
+\label{eq:lhs2}
+\text{LHS}=\nabla^{2}\mathbf{B}
+\end{equation}
+
+\noindent
+The last step is to simply equate \cref{eq:rhs} by  \cref{eq:lhs} as is shown in \cref{eq:penultimate}, then multiply the whole thing through by $-1$ to get the same expression as is in \cref{eq:identity}
+
+\begin{equation}
+\label{eq:penultimate}
+\text{LHS}=-\nabla^{2}\mathbf{B}=-\epsilon\frac{\partial^{2}\mathbf{B}} {\partial t^{2}} - \sigma\frac{\partial \mathbf{B}} {\partial t}=\text{RHS}
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%% 
+%                               II                                 %
+%%%%%%%%%%%%%%%%%%%%
+
+\section*{II. Show that the plane wave in \cref{eq:planewave} gives the dispersion relation shown in equation \cref{eq:relation}}
+
+\begin{equation}
+\label{eq:planewave}
+B=B_{0}e^{kz-\omega{t}}
+\end{equation}
+
+\begin{equation}
+\label{eq:relation}
+k=\sqrt{\mu\omega(\epsilon\omega+i\sigma})
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%% 
+%                       II. Answer                           %
+%%%%%%%%%%%%%%%%%%%%
+\subsection*{II. Answer}
+
+\noindent
+The phase difference between the magnetic and electric field is given by the complex phase  k. Using the criterion we can infer some characteristics about the wave depending on this ratio, shown in \cref{eq:criterion}.  The complex part is the $\sigma$ term and the real part is the $\epsilon$ term.
+
+\begin{equation}
+\label{eq:criterion}
+\frac{\sigma}{\epsilon\omega}
+\end{equation}
+\noindent
+Where \cref{eq:criterion} gives the ratio between the relaxation time $\tau=\frac{\epsilon}{\sigma}$  of the medium the waves are traveling through and the period of oscillation . If we recognise that $k$ takes the form as shown in \cref{eq:complex} with $\alpha$ and $\beta$
+
+\begin{equation}
+\label{eq:complex}
+k=\alpha+i\beta
+\end{equation}
+
+\begin{equation}
+\label{eq:a}
+\alpha^{2}-\beta^{2}=\omega^{2}\mu\epsilon
+\end{equation}
+
+\begin{equation}
+\label{eq:b}
+\beta=\frac{\omega\mu\sigma}{2\alpha}
+\end{equation}
+
+\begin{equation}
+\label{eq:insulator}
+\sigma \ll \epsilon\omega
+\end{equation}
+\noindent
+For a good conductor we have the criterion outlined by \cref{eq:conductor} the phase is dependent on the frequency.
+
+\begin{equation}
+\label{eq:conductor}
+\epsilon\omega \ll \sigma
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%% 
+%                     Question.  III                        %
+%%%%%%%%%%%%%%%%%%%%
+\section*{Question III.  Define the skin depth, $\delta$ and by expanding \cref{eq:identity}, appropriately, obtain the limiting expressions (given in lecture 19) for the skin depth in poor and good conductors}
+
+
+%%%%%%%%%%%%%%%%%%%% 
+%                     Answer.    III                        %
+%%%%%%%%%%%%%%%%%%%%
+
+\noindent
+The skin depth gives the characteristic distance over which amplitude of the wave is attenuated due to the exponential decay of the first exponential in \cref{eq:expe}.
+\begin{equation}
+\label{eq:expe}
+\mathbf{E}=\mathbf{E_{0}}e^{-kz}e^{i(kz-\omega t)}
+\end{equation}
+
+\begin{equation}
+\label{eq:skindepth}
+\delta=\frac{1}{\beta}=\frac{2\alpha}{\omega\mu\sigma}
+\end{equation}
+
+
+The skin depth for a conductor obeying the criterion defined in \cref{eq:conductor} is \cref{eq:sdconductor}
+
+
+\begin{equation}
+\label{eq:sdconductor}
+\delta=\frac{1}{\beta}=\left(\frac{2}{\omega\mu\sigma}\right)^{\frac{1}{2}}
+\end{equation}
+
+The skin depth for an insulator obeying the criterion defined in \cref{eq:insulator} is \cref{eq:sdinsulator}
+
+\begin{equation}
+\label{eq:sdinsulator}
+\delta=\frac{1}{\beta}=\left(\frac{4\epsilon}{\mu\sigma}\right)^{\frac{1}{2}}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%% 
+%                               IV                                %
+%%%%%%%%%%%%%%%%%%%%
+\section*{Question IV. Show using the third Maxwell equation that the complex amplitudes of the magnetic and electric field are related by \cref{eq:re1}}
+
+\noindent
+Using Maxwell's III as expressed in \cref{eq:maxwell3}
+
+\begin{equation}
+\label{eq:re1}
+\mathbf{B_{0}}=\frac{k}{\omega} \mathbf{E}_{0}
+\end{equation}
+
+\begin{equation}
+\label{eq:re2}
+\mathbf{k}\times\mathbf{E_{0}}=\omega \mathbf{B_{0}}
+\end{equation}
+
+\noindent
+If a material were not conducting the electric and magnetic fields would be perpendicular to the motion, thus the wave is a transverse wave. 
+
+\begin{equation}
+\label{eq:re3}
+\mathbf{B_{0}}=\frac{\mathbf{k}}{\omega } \times\mathbf{E_{0}}
+\end{equation}
+
+
+\begin{equation}
+\label{eq:re4}
+B_{0}=\left|\frac{\mathbf{k}}{\omega } \times\mathbf{E_{0}}\right |
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%% 
+%                               IV b)                           %
+%%%%%%%%%%%%%%%%%%%%
+\subsection*{IV b) Question}
+\textbf{Hence show that in a good conductor the magnetic field lags the electric field by $\frac{\pi}{4}$ and find the ratio of their amplitudes.}
+\subsection*{IV b) Answer}
+\noindent
+In a conductor the complex wave vector $k$ gives a phase difference between the electric and magnetic fields. If the conductor is a \enquote{good} one, then \cref{eq:good} is a fair approximation of the relationship between the electric and magnetic phase with respect to the complex wave vector. 
+\noindent
+For a good conductor \cref{eq:alpha,eq:good} because $\omega$ is contained in the $\alpha$ and $\beta$ terms and $\sigma$ is negligibly small.
+
+
+\begin{equation}
+\label{eq:good}
+\beta\approx \alpha
+\end{equation}
+\noindent
+The result is \cref{eq:good} which leads to the result that the phase is found by \cref{eq:phaseConductor}
+\begin{equation}
+\label{eq:phaseConductor}
+\mathrm{tan}\phi=\left(\frac{\beta}{\alpha}\right)\approx 1
+\end{equation}
+
+This means the phase angle, $\phi$ is approximated as in \cref{eq:pi4} and the relationship of the amplitudes of the electric and magnetic fields \cref{eq:ampconductor}
+
+\begin{equation}
+\label{eq:pi4}
+\phi\approx\frac{\pi}{4}
+\end{equation}
+
+\begin{equation}
+\label{eq:ampconductor}
+\mathbf{B_{0}}=\frac{k}{\omega } E_{0}\mathbf{e}_{z}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%% 
+%                               IV    c)                       %
+%%%%%%%%%%%%%%%%%%%%
+\subsection*{IV c) Question}
+
+\textbf{In a poor conductor show that there is no phase lag and find the ratio of magnetic and electric field amplitudes}
+
+\subsection*{IV c) Answer}
+
+\noindent
+In the case of a poor conductor, since $\phi=0$, \cref{eq:complex} implies that \cref{eq:alpha} holds while $\beta\ll\alpha$ 
+
+
+\begin{equation}
+\label{eq:alpha}
+\alpha=\omega\sqrt{\mu\epsilon}
+\end{equation}
+\noindent
+Therefore the ratio of amplitudes is given by \cref{eq:insulamp}
+
+\begin{equation}
+\label{eq:insulamp}
+B_{0} \approx \frac{\alpha }{\omega}E_{0}= \sqrt{\mu\epsilon}E_{0}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%% 
+%                               V                                 %
+%%%%%%%%%%%%%%%%%%%%
+\section*{V. Deduce the velocity of the electromagnetic wave in the limiting cases of a good conductor and in a poor conductor}
+
+\subsection*{V. Answer}
+\noindent
+The complex component of $k$ does not affect the velocity of the motion of the wave. So defining the real part of $k$ to be $k'$, where where $k'=\alpha$ The phase velocity is given by \cref{eq:vp}
+\begin{equation}
+\label{eq:vp}
+v_{p} =\frac{\omega}{\real{k}'}=\frac{\omega}{\alpha}
+\end{equation}
+The group velocity is given by \cref{eq:vg}
+\begin{equation}
+\label{eq:vg}
+v_{g} =\frac{\delta\omega}{\delta k'}
+\end{equation}
+\noindent
+For an insulator, where \cref{eq:insulator} holds, the phase velocity is given by \cref{eq:vpcon} 
+\begin{equation}
+\label{eq:vins}
+v_{p} =\frac{\omega}{k'}=\frac{1}{\sqrt{\mu\epsilon}}
+\end{equation}
+
+There is no dispersion because it has a phase velocity independent of frequency. So, for an insulator \cref{eq:vp} is equal to  \cref{eq:vg}.
+
+\noindent
+However, in a conductor things are more complex and the phase velocity is as shown in \cref{eq:vpcon}
+\noindent
+The complex component of $k$ does not affect the velocity of the motion of the wave. So defining the real part of $k$ to be $k'$, where where $k'=\alpha$. The conclusion from part III was that $\alpha\approx \beta$ and so is influenced by the constant value $\sigma$ so that \cref{eq:alphacon} 
+
+\begin{equation}
+\label{eq:alphacon}
+\alpha \approx \left(\frac{\omega\mu\sigma}{2}\right)^{\frac{1}{2}}
+\end{equation}
+
+Therefore the phase velocity is given by \cref{eq:vpcon} because there is dispersion.
+\begin{equation}
+\label{eq:vpcon}
+v_{p}=\frac{\omega}{\real{k}'}=\frac{\omega}{\alpha} \approx \left( \frac{2\omega}{\mu\sigma}\right)^{\frac{1}{2}}
+\end{equation}
+\noindent
+The group velocity for the conductor is different to the phase velocity as shown in \cref{eq:vgcon}
+\begin{equation}
+\label{eq:vgcon}
+v_{g} =\frac{\delta\omega}{\delta k'}= \frac{4\alpha}{\mu\sigma}\approx\frac{4\sqrt{\omega}}{\sqrt{\mu\sigma}}
+\end{equation}
+
+
+
+
+\end{document}

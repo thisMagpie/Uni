@@ -1,0 +1,16 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{tikz}
+\pgfplotsset{width=7cm,compat=1.7}
+
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[legend pos = south east, ylabel=Intensity, xlabel={Wavelength, $\lambda$ [nm]}, xmin=600,xmax=680]
+    \addplot[no markers,color=red]
+    table [x index = 0, y index= 1] {ledred03.asc}; 
+	\end{axis}
+\end{tikzpicture}
+
+\end{document}

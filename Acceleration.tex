@@ -1,0 +1,187 @@
+%% Created by Maple 16.00, Mac OS X
+%% Source Worksheet: Acceleration.mw
+%% Generated: Mon Apr 01 13:36:39 BST 2013
+\documentclass{article}
+\usepackage{maplestd2e}
+\def\emptyline{\vspace{12pt}}
+\begin{document}
+\pagestyle{empty}
+\DefineParaStyle{Maple Heading 1}
+\DefineParaStyle{Maple Text Output}
+\DefineParaStyle{Maple Dash Item}
+\DefineParaStyle{Maple Bullet Item}
+\DefineParaStyle{Maple Normal}
+\DefineParaStyle{Maple Heading 4}
+\DefineParaStyle{Maple Heading 3}
+\DefineParaStyle{Maple Heading 2}
+\DefineParaStyle{Maple Warning}
+\DefineParaStyle{Maple Title}
+\DefineParaStyle{Maple Error}
+\DefineCharStyle{Maple Hyperlink}
+\DefineCharStyle{Maple 2D Math}
+\DefineCharStyle{Maple Maple Input}
+\DefineCharStyle{Maple 2D Output}
+\DefineCharStyle{Maple 2D Input}
+\begin{maplegroup}
+\begin{Maple Normal}{
+Acceleration Method For Determining G.}\end{Maple Normal}
+
+\begin{Maple Normal}{
+}\end{Maple Normal}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{restart;
+}{}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+}\end{Maple Normal}
+\begin{Maple Normal}{
+Taking 30.01 to be the depth of the housing, I can half that and take away 1mm from an estimate.}\end{Maple Normal}
+
+\begin{Maple Normal}{
+The estimate is that the rod holding the two m1 masses is approximately 2mm in diameter.}\end{Maple Normal}
+
+\begin{Maple Normal}{
+Since it is holding the mirror in front of it.}\end{Maple Normal}
+
+\begin{Maple Normal}{
+}\end{Maple Normal}
+\textbf{Lo:=(630.5+14.005+18.2)*10\symbol{94}(-3);}\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{Lo := .6627050000}{\[\displaystyle {\it Lo}\, := \, 0.6627050000\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{630.5+14.005+10.6;}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{655.105}{\[\displaystyle  655.105\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{b:=((63.01+30.1)*10\symbol{94}(-3))/2;
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{b := 0.4655500000e-1}{\[\displaystyle b\, := \, 0.04655500000\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{d:=49.3*10\symbol{94}(-3);}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{d := 0.4930000000e-1}{\[\displaystyle d\, := \, 0.04930000000\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+Taken from the first swing's peak to equilibrium point.}\end{Maple Normal}
+
+\textbf{S:=20.96*10\symbol{94}(-3);}\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{S := 0.2096000000e-1}{\[\displaystyle S\, := \, 0.02096000000\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{alpha:=arctan(S/Lo)/2;
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{alpha := 0.1580870466e-1}{\[\displaystyle \alpha\, := \, 0.01580870466\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+Alpha is much less than 1.}\end{Maple Normal}
+
+\textbf{L:=S*Lo/(2*alpha);}\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{L := .4393243184}{\[\displaystyle L\, := \, 0.4393243184\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+Beta is not that nuch less than 1.}\end{Maple Normal}
+
+\textbf{beta:=arccos(Lo/L);}\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{beta := .9699561149*I}{\[\displaystyle \beta\, := \, 0.9699561149\,i\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{T:=608.353;
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{T := 608.353}{\[\displaystyle T\, := \, 608.353\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{d:=49.3*10\symbol{94}(-3);
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{d := 0.4930000000e-1}{\[\displaystyle d\, := \, 0.04930000000\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{m2:=1.5085;
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{m2 := 1.5085}{\[\displaystyle {\it m2}\, := \, 1.5085\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{ao:=(10.0*10\symbol{94}(-3))/(3600);
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{ao := 0.2777777778e-5}{\[\displaystyle {\it ao}\, := \, 0.000002777777778\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{G:=(b\symbol{94}2*ao*d)/ (2*m2*cos(beta));
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{G := 6.521789345*10^(-11)}{\[\displaystyle G\, := \,{ 6.521789345\times 10^{-11}}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+Correction facto}\end{Maple Normal}
+
+\textbf{K:= (b\symbol{94}3)/(b\symbol{94}2 + (4*d\symbol{94}2))\symbol{94}(3/2);}\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{K := 0.7783286727e-1}{\[\displaystyle K\, := \, 0.07783286727\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{evalf(G/(1-K));
+}{}
+\end{mapleinput}
+\end{maplegroup}
+\end{document}

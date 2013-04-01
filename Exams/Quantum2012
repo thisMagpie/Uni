@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{amsthm} 
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[hmargin=1.5cm,vmargin=1.5cm]{geometry}
+\usepackage[super,comma,sort&compress, square]{natbib}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{float}
+\usepackage{csvsimple}
+\usepackage{gnuplottex}
+\usepackage{todonotes}
+\usepackage{csquotes}
+\usepackage{pgfkeys}
+
+
+\pgfplotsset{compat=1.7}
+\usepackage[english]{babel}
+\pgfplotsset{every axis y label/.append style={xshift=1.5em}}
+
+
+
+\usepackage{hyperref} %% to turn the links clickable and load this before cleveref
+\usepackage{cleveref}
+\crefname{table}{table}{tables}
+\Crefname{table}{Table}{Tables}
+\crefname{figure}{figure}{figures}
+\Crefname{figure}{Figure}{Figures}
+\crefname{equation}{equation}{equations}
+\Crefname{Equation}{Equation}{Equation}
+
+
+\title{Quantum Mechanics May 2011}
+\author{}
+\date{\today}
+
+\begin{document}
+
+\section*{A.1}
+Consider the operators $\hat{O}_{1}=x ,\hat{O}_{2}=\frac{d^{2}}{dx^{2}} $ and generic wave function $\psi$ compute $$\hat{O}_{1}\hat{O}_{2}\psi=\hat{O}_{2}\hat{O}_{1}\psi$$
+
+\begin{equation}
+\label{eq:}
+\end{equation}
+
+
+\end{document}
