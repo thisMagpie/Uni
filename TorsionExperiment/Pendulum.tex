@@ -15,6 +15,9 @@
 \usepackage{csquotes}
 \usepackage{pgfkeys}
 \usepackage{listings}
+\usepackage{listings}
+\usepackage{bbding}
+
 \pgfplotsset{compat=1.7}
 \usepackage[english]{babel}
 \pgfplotsset{every axis y label/.append style={xshift=1.0em}}
@@ -86,9 +89,8 @@ s0946936 \\}
 
 \begin{abstract}
 \noindent
-Here it has been used to learn t using the Acceleration Method. ThiThe period of the pendulum was determined to be 608(7) seconds (s). 
+In this experiment two different methods were used to determine this value of Newtons gravitational constant, G using a torsion pendulum. Determination by the analysis of the acceleration of the pendulum yielded the result $7.1(4)\times{10^{-11}}{\rm \ m}^3 {\rm kg}^{-1} {\rm s}^{-2}$. The determination by end deflection analysis was found to be $6.50(17)\times{10^{-11}}{\rm \ m}^3 {\rm kg}^{-1} {\rm s}^{-2}$. Both  results were in agreement of the accepted value of. $6.67\times{10^{-11}}{\rm \ m}^3 {\rm kg}^{-1} {\rm s}^{-2}\cite{nist}$. The influence of random and systematic errors is discussed.
 
-The gravitational constant was determined to be bla.... It was found that the error.
  \end{abstract}
 
 \clearpage
@@ -98,12 +100,7 @@ The gravitational constant was determined to be bla.... It was found that the er
 
 \section{Introduction}
 
-\subsection{Historical Background}
-
-This experiment is a reproduction of the one performed by Henry Cavendish when he wished to determine the density of the earth using a torsion pendulum. The universal gravitational constant G, is not something that is easy to determine. The reason for this is that the earth is accelerating and it's gravitational force, $g$ is much greater than the literature value for G (or indeed, the value for G that Isaac Newton hypothesised in his book, Principia. Where here stated in theorem | that the force between two masses can be determined by the inverse of the distance between them. But, not without some gravitational constant! 
-
-
-\subsection{Theory}
+This experiment is a reproduction of the one performed by Henry Cavendish when he wished to determine the density of the earth using a torsion pendulum.\cite{density,densearth} The universal gravitational constant G, is not something that is easy to determine. The reason for this is that the earth is accelerating and it's gravitational force, $g$ is much greater than the literature value for G (or indeed, the value for G that Isaac Newton hypothesised in his book, Principia.\cite{newton}. Where here stated in theorem | that the force between two masses can be determined by the inverse of the distance between them. But, not without some gravitational constant! 
 
 According to Isaac Newton, the force between two masses can be expressed as \cref{eq:grav}
 
@@ -141,8 +138,6 @@ Solving \cref{eq:torque} allows us to see why the torsion pendulum oscillates at
 \mathrm{T= \frac{2\pi}{\omega_n} = 2\pi \sqrt{\frac{I}{\kappa}}}
 \end{equation}
 
-\noindent
-The glass is there in order to protect the small dumbbells from being disturbed by fluctuations in the air but because it is between the mirror and the detector, there is the issue of how the glass affects the path of the light to consider. This is because the principle of moments, expressed in \cref{eq:moments} indicates that the forces in the local vicinity of the dumbbells will have an effect on their oscillatory motion.  
 
 \begin{equation}
 \label{eq:moments}
@@ -152,22 +147,14 @@ The glass is there in order to protect the small dumbbells from being disturbed 
 \noindent 
 Where $r$ is the position vector and it is perpendicular to the Force, F. 
 
-
+ $\Delta S$ found by the separation between the equilibrium of the pendulum when it is subjected to torsion from one side until it reaches equilibrium and then subjected to the other side as expressed in \cref{eq:deltaS}. The angle made by the reflected light wave given by \cref{eq:alpha} 
 \noindent 
-It is possible to perform a small angle approximation so that $\mathrm{sin}\left(\frac{\delta}{2}\right)\approx\left(\frac{\delta}{2}\right)$. Since $\delta$ can be determined from the distance, $\Delta S$ found by the separation between the equilibrium of the pendulum when it is subjected to torsion from one side until it reaches equilibrium and then subjected to the other side as expressed in \cref{eq:delta}. The angle made by the reflected light wave given by \cref{eq:deltafin} with $R$ being the coefficient of reflectivity. 
 
-\begin{equation}
-\label{eq:deltaS}
-\mathrm{\Delta S = S_{1}-S_{2}}
-\end{equation}
 
 
 \section{Experimental Method}
 
-Two balls, each of mass $0.015\mathrm{kg}$ were separated by a small rigid rod suspended $\approx$ 26cm from a wire string from their centre of mass (CoM) inside a circular case with glass faces on either side. It was necessary to suspend the from a height. This was done using a thin copper cable so that the diamagnetic properties of the copper would prevent it from becoming magnetised. with enough torsion to before the pendulum could 
-
-\subsection{Equipment}
-
+A Duratool carbon fibre digital calliper with an error of $\pm{0.1}\mathrm{mm}$, was used for measurements of less than 150mm and a wooden meter rule was used for any measurement up to a meter. The software CASSY Lab came with the electronic phototransistor sensors.
 
 %%%%%%%%%%%%%%%%%%%%%%
 %
@@ -177,31 +164,48 @@ Two balls, each of mass $0.015\mathrm{kg}$ were separated by a small rigid rod s
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=15cm, height=10cm]{images/schematic.png}
+\includegraphics[scale=0.5]{images/schematic.png}
 \caption{A Schematic of the Cavendish}
-\label{fig:probe}
+
+\label{fig:layout}
+\caption{The torsion band was a brass wire with a torsion constant of approximately $ 8.5 \times{10^{-9}}\mathrm{Nm/rad}$. The masses, $m_{2}$ are labelled as \enquote{big balls}. Where $m_{2_{a}}=1.509(15)$kg was placed furthest from the left, $m_{2_{b}}=1.508(15)$kg was placed closest to the left.}
 \end{figure}
 
-The torsion band was a brass wire with a torsion constant of approximately $ 8.5 \times{10^{-9}}\mathrm{Nm/rad }$
+Before anything could be achieved, the pendulum had to be calibrated to \enquote{zero point} which involved leaving it alone for at least twelve hours.This was to allow the torsion band to elongate.\cite{manual} The experiment continued with a newly calibrated set up after the delegate torsion band had been broken during calibration. 
 
-\subsection{Preparation and Calibration}
 
-Before anything, the system had to be calibrated to zero point. This was because the periodic motion of the pendulum was highly sensitive to the initial conditions. Initially the pendulum torsion band had become slack. It took several days of calibration to solve this. The torsion band was so delicate is snapped and the head had to be replaced, while the torsion band was sent for repair. The experiment continued with a newly calibrated set up.
+The core experimental apparatus comprised of two lead masses each weighing $0.015(5)\mathrm{kg}$, each with a diameter 13.0(1)mm which were screwed fast at both ends to make a set of tiny dumbbells of length 111.7(1)mm, a case to keep them in, two larger balls of mass $1.508(2)\mathrm{kg}$ and $1.509(2)\mathrm{kg}$, an electronic light sensor. 
 
-The core experimental apparatus comprised of two lead masses each weighing $0.015(5)\mathrm{kg}$, each with a diameter 13.0(1)mm which were screwed fast at both ends to make a set of tiny dumbbells of length 111.7(1)mm, a case to keep them in, two larger balls of mass $1.508(2)\mathrm{kg}$ and $1.509(2)\mathrm{kg}$, an electronic light sensor, 
+The dumbbells were then attached to a special brass wire, called a torsion band, which was held fast by a knurled knob from where it was suspended some $ 260\mathrm{mm}$ (approximately, according to the laboratory manual).
 
-The dumbbells were then attached to a special brass wire called a torsion band which was held fast by a knurled knob so it could be suspended from a height of $\approx 260\mathrm{mm}$ (according to the laboratory manual).  The dumbbells were kept inside a protective housing with glass windows at either side and this was positioned parallel to their length. The pendulum was then calibrated so that the dumbbells were able to hang freely about their centre of mass with a concave mirror attached to their \enquote{front} so that a sensor positioned $L=648.7\mathrm{mm}$, which was emitting light from two light emitting diodes (LEDs), would pick up the reflected, polarised beams and convert this result to a digital signal in order to run it on some provided propeitry software called \enquote{CASSY Labs} for analysis.
+ The pendulum was then calibrated so that the dumbbells were able to hang freely about their centre of mass with a concave mirror attached to their \enquote{front} so that a sensor positioned $L=654.5(10)\mathrm{mm}$, which was emitting light from two light emitting diodes (LEDs), would pick up the reflected, polarised beams and convert this result to a digital signal in order to run it on some provided propietry software called \enquote{CASSY Labs} for analysis.
+
+ The dumbbells were kept inside a protective housing with glass windows at either side and this was positioned parallel to their length. This was done in order to prevent the dumbbells from being disturbed by fluctuations in air pressure, they were placed inside a case with circular glass faces on either side of them. This glass is between the mirror and the detector, so there was the issue of how the glass affects the path of the light to consider, but an assessment of the sources of error indicated the error from the windows would be negligible. A schematic of the layout is shown in \cref{fig:layout}.\noindent  
+
+ 
+The principle of moments, expressed in \cref{eq:moments} indicates that the forces in the local vicinity of the dumbbells will have an effect on their oscillatory motion and this was another consideration during the calibration and setup procedure. A schematic map of the \enquote{risk zones} for potential local disturbances is shown in \cref{fig:map}
 
 Because the motion of the dumbbells was so easily disturbed it needed to be left overnight to settle to equilibrium and then were positions on two ball holders and gently swivelled so that they were touching the glass without knocking the dumbbells. This provided a torsion which would be just enough to displace the dumbbells from equilibrium, without knocking the case. The dumbbells were again left so that their oscillations could decay and the resulting signal converged to a position $S_{1}$. Once the was a clear sign that the signal had settled in one position, $S_{1}$ the larger balls were swivelled so that they would touch the glass on the other side, applying a torsion there without knocking the dumbbells to a chaotic motion. This allowed the motion of the dumbbells to settle to a position $S_{2}$
 
-The difference between the two positions of equilibrium would give vital information about the angle the displaced dumbbells made with respect to the sensor which faced their equilibrium at a distance L, directly in front of them. This is expressed mathematically in \cref{eq:theta}.
+The difference between the two positions of equilibrium would give vital information about the angle the displaced dumbbells made with respect to the sensor which faced their equilibrium at a distance L, directly in front of them. This is expressed by \cref{eq:alpha}.
 
 \begin{equation}
-\label{eq:theta}
-\mathrm{\theta = \frac{\Delta S }{4L}}
+\label{eq:alpha}
+L_{1}=\frac{ S Lo}{2\alpha};
+\end{equation}
+In the case of this experiment it was possible to perform a small angle approximation.
+
+\begin{equation}
+\label{eq:errorG}
+\sigma_{G}=\sqrt{\left(\frac{\partial^{2}{G}}{\partial{}{L}^{2}}\Delta{L}\right)^{2}
++\left(\frac{\partial^{2}{G}}{\partial{}{b}^{2}}\Delta{b}\right)^{2}
++\left(\frac{\partial^{2}{G}}{\partial{}{d}^{2}}\Delta{d}\right)^{2}
++\left(\frac{\partial^{2}{G}}{\partial{\Delta{S}}} \Delta{S}\right)^{2}
++\left(\frac{\partial^{2}{G}}{\partial{T}^{2}}{\Delta{T}}\right)^{2}}
+
 \end{equation}
 
- 
+For b, d, $m_{1}$, T $\Delta{S}$ and L
 
 The angle was as a result of the force from the mass of the balls on the ball holders which were made to apply a torsion to displace the dumbbells so that they oscillated until the reached equilibrium with a bias to one side. At this stage when the signal indicated the motion had reached equilibrium, the balls were again swivelled to rest at the opposite side thus applying a torsion there. 
 
@@ -209,13 +213,28 @@ Once this had completed the remaining measurements were made, to determine any e
 
 The distance  $\Delta S$ was qualitatively determined first by running the CASSY Lab software to get the value for a mouse pointer determined distance between the two converged points displayed on the file. The software was then run to obtain an envelope result to try and assertion whether this would give a better estimate of the $\Delta S$. Ultimately the software was converted to ASCII so that a mean of the convergent data points could be calculated and compared with the CASSY Lab estimations using a java program designed for data analysis\cite{me}. It was determined that the latter method was more reliable as the result was within the 2$\%$ precision and since this was estimate of the hardware analogue to digital conversion of the sensor equipment  obtained from the PASCO manual provided.
 
-A calculation of period based on the given value for torsion of the wire as given from the information in the data sheet then we would expect the period to be \todo{bla} from \cref{eq:Time}. If we use the oscillations printed to the ASCII  file by the computer software  
-\section*{Corrections}
-The coherence of a red LED is typically 0.4.\cite{red} which is fairly low. However the pendulum was set up so that the LED would shine only  655.1(2)mm away from the This meant that 
+\section*{Systematic Errors}
+
+The coherence of a red LED is typically 0.4.\cite{red} which is fairly low. The results of the calculation for $\beta$ confirmed that a small angle approximation could be used as shown in \cref{eq:beta}
+
 \begin{equation}
-\label{eq:Time}
-\mathrm{T = \frac{4\pi^2 I}{\kappa}}
+\label{eq:beta}
+\beta=\mathrm{cos^{-1}\frac{Lo}{L1}}
 \end{equation}
+
+A correction factor needed to be used which was as is in \cref{eq:correction} and this was applied to G as is in \cref{eq:coG}
+\begin{equation}
+\label{eq:correction}
+K= \frac{b^3}{(b^2 + (4*d^2))}^{\frac{3}{2}}
+\end{equation}
+
+
+\begin{equation}
+\label{eq:coG}
+G=\frac{G_{0}}{1-K}
+\end{equation}
+
+
 %%%%%%%%%%%%%%%%%%%%%%
 %
 %           Map
@@ -226,103 +245,50 @@ The coherence of a red LED is typically 0.4.\cite{red} which is fairly low. Howe
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm, height=11cm]{images/map.png}
-\caption{A map of the local vicinity of the experiment. The experiment site is indicated in the pink table along with the high risk zones because it is through the double doors were a lot of activity from people moving through the doorway would cause the walls to shake which was likely to lead to chaotic fluctuations in the pendulum}
-\label{fig:probe}
+\caption{A schematic \enquote{map} of the local vicinity of the experiment. The experiment site is indicated in the pink table along with the high risk zones because it is through the double doors were a lot of activity from people moving through the doorway would cause the walls to shake which was likely to lead to chaotic fluctuations in the pendulum}
+\label{fig:map}
 \end{figure}
 
-%%%%%%%%%%%%%%%%%%%%%%
-%
-%           Acceleration
-%
-%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection{Acceleration Method}
-
-According to the manual
-
-%%%%%%%%%%%%%%%%%%%%%%
-%
-%           BY Equilibrium Positions
-%
-%%%%%%%%%%%%%%%%%%%%%%
-
-
-\section{Measurement by Equilibrium Positions}
-
-
-According to the manual this was expected to give the most accurate result when compared with the literature value.
-
-%%%%%%%%%%%%%%%%%%%%%%
-%
-%           End Deflection
-%
-%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection{End-deflection Method}
-
+The various manuals had different explanations for how the end deflection method should be applied. When it became apparent that the oscillations were decaying at a significant rate the method employed was to take the equilibrium to initial peak which followed a \enquote{swivel} of the of the waves and average them. This was due to the heavy damping that seemed to drastically reduce the amplitude of the wave even after half an oscillation
 
 \begin{equation}
-\label{eq:gdef}
-\mathrm{G=\frac{\pi^{2}\Delta{S} d b }{T^{2}m_{1}L}}
+\label{eq:G}
+G=\frac{\pi^2 S  b^2 d}{T^2 \mathrm{m_{2}L}} {\rm \ m}^3 {\rm kg}^{-1} {\rm s}^{-2}
 \end{equation}
 
 
-The value for $\Delta{S}$ was $18.7(2)\mathrm{m}$. This lead to a value for the angle as being. The trickiest part of ascertaining a value for the period. The reasons for this will be discussed with the results.  This is because the oscillations gave different result for each different peak to peak measurement. This was likely not to have been due to the A/D conversion because the resolution of the equipment was only 1\%.
+The acceleration method required a slightly different equation but other than that the values used were the same for both methods as shown in \cref{eq:acc}. For this method, the first 8 points of the initial ascent and descent of the curve were taken from the moment immediately after the large masses $m_{2}$ had been swivelled.  In order to construct a linear approximate graph. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+%
+%           ACCELER
+%
+%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{equation}
+\label{eq:acc}
+G=\frac{b^2 a_{o}}{2 m_{2}}\rm \ m}^3 {\rm kg}^{-1} {\rm s}^{-2}
+\end{equation}
+
+\begin{equation}
+\label{eq:grad}
+a_{o}=\frac{m d}{L}
+\end{equation}
+
+Where m is the gradient of the linear graph made from the first two minutes of the motion of the pendulum following a swivel. The value for $\Delta{S}$ was $S:=20.9(3)\mathrm{m}$. This lead to a value for the angle as being. The trickiest part of ascertaining a value for the period. The reasons for this will be discussed with the results.  This is because the oscillations gave different result for each different peak to peak measurement. This was likely not to have been due to the A/D conversion because the resolution of the equipment was only 1\%.
 
 The error in $T^{2}$ was determined using \cref{eq:errort} so that the 
 
 Finally, the errors were combined to obtain a result for G 
 
-\begin{equation}
-\label{eq:errors}
-\mathrm{\sigma=\sqrt{\left(\frac{\Delta L }{L}\right)^{2}+\left(\frac{\Delta b}{b}\right)^{2}}}
-\end{equation}
-
+%%%%%%%%%%%%%%%%%%
 \section{Results and Discussion}
+%%%%%%%%%%%%%%%%%
 
-\subsection{Limitations of the Experimental Method and Future Consideration}
-
-Although stationary walls cannot affect the forces acting on the masses in principle. The walls are not completely stationary when there are people walking about or banging outside, the noise is heard through the walls this is because the oscillations from sound waves travelling around in the walls which could have potentially affected the table. The action of swivelling the balls should ideally be friction free and smooth but in reality it required a steady hand and because of the diverse motion of the human arm and hand, is also not very reproducible. Therefore this experiment could be greatly improved by using a mechanical arm to swivel the mass. That way the arm could be configured to repeat the same motion in the same way every time. 
-
-The experiment could also be improved by placing the pendulum on a solid marble table. This would prevent the set up from being accidentally knocked. It could also be possible that tmtion in the corridor as a worse affect on t
-
-%%%%%%%%%%%%%%%%%%%%%%
-%
-%           Conclusion
-%
-%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Conclusion}
-
-%%%%%%%%%%%%%%%%%%%%%%
-%
-%           Acknowledgements 
-%
-%%%%%%%%%%%%%%%%%%%%%%
-
-\bibliography{pendulum}
-\bibliographystyle{unsrt}
+\Cref{tab:table} shows how the error on the measurements of the diameter of the masses were estimated after a number of measurements had been taken using the vernier calliper. The error on the diameter of the masses was larger than expected due to the asymmetrical shape of the lead balls. The result was that the mean diameter was 60.0(9)mm. 
 
 
-\section{Acknowledgements}
-
-\section{Appendix}
-
-\begin{table}[htdp]
-\vline
-\begin{tabular}{| r | c | r  | c | r  | c | r |  c | r }
-\hline 
-Variable & L & b & d  & $\Delta S$  \\
-Tool & meter rule  & calliper  & calliper & CASSY Lab   \\
-Value  &  &  &  &  &   \\
-Error &  &  &  &  &   \\
-
-\end{tabular}
-\vline
-\caption{A table of measured values }
-\end{table}%
-
-\begin{center}
 \begin{table}[H]
 \centering
 \begin{tabular}{| r | c | r  | c  | | r  | } 
@@ -348,13 +314,63 @@ mean & 60.01 &  \\
 std deviation & & 0.949 \\
 \hline
 \end{tabular}
-\caption{A table of measured values for the diameter of the large balls, $m_{2}$. For each ball, five values were recorded using the digital calliper and  }
+\caption{A table of measured values for the diameter of the large balls, $m_{2}$. For each ball, five values were recorded using the digital calliper rotating the masses for each measurement taken to get an even spread where possible. The data shows the standard deviation and the mean.}
+\label{tab:table}
 \end{table}%
 
-\end{center}
+These errors from the asymmetrical masses, propagated to the error in b as shown in \cref{eq:errorb}, where $l_{o}$ the measurement of the housing taken using the digital calliper and $\Delta{l_{o}$ was the 0.1mm error in this measurement due to inaccuracy of the digital calliper and D is the measurement of the diameter over 2. 
+
+\begin{equation}
+\label{eq:errorb}
+\mathrm{\sigma_{b}=\sqrt{\left(\frac{\Delta D }{D}\right)^{2}+\left(\frac{\Delta l_{0}}{l_{0}}\right)^{2}}}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=2.0]{graphs/mainresult}
+\caption{A graph of the successful run taken with $\Delta{0.25}s$ between each recorded time steps. The period of oscillation was determined to be $T=608(7)s$. The displacement of the was determined to be $\Delta{S}=20.96\mathrm{mm}$. The x and y error bars are indicated by the legend. The error bars on the T axis, are too small to see.}
+
+\label{fig:result}
+\end{figure}
+
+The result of the acceleration method is shown in \cref{fig:acc}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=2.0]{graphs/linearB}
+\caption{The determination of G was found to be  $7.1(4)\times{10^{-11}}{\rm \ m}^3 {\rm kg}^{-1} {\rm s}^{-2}$ by using the gradient of this graph of S against $T^{2}$. This could have been improved by taking more data points within a minute instead of only taking data in 25 second increments.}
+\label{fig:acc}
+\end{figure}
 
 
+The result of the acceleration method is shown in \cref{fig:acc}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=2.0]{graphs/linearA}
+\caption{The determination of G was found to be $7.1(4)\times{10^{-11}}{\rm \ m}^3 {\rm kg}^{-1} {\rm s}^{-2}$ by using the gradient of this graph of S against $T^{2}$. This could have been improved by taking more data points within a minute instead of 25 second increments.}
+\label{fig:acc}
+\end{figure}
 
+Although stationary walls cannot affect the forces acting on the masses in principle. The walls are not completely stationary when there are people walking about or banging outside, the noise is heard through the walls this is because the oscillations from sound waves travelling around in the walls which could have potentially affected the table. The action of swivelling the balls should ideally be friction free and smooth but in reality it required a steady hand and because of the diverse motion of the human arm and hand, is also not very reproducible. Therefore this experiment could be greatly improved by using a mechanical arm to swivel the mass. That way the arm could be configured to repeat the same motion in the same way every time. 
 
+The experiment could also be improved by placing the pendulum on a solid marble table. This would prevent the set up from being accidentally knocked. It could also be possible that the doorway in the the corridor could have a greater influence on the stability of the torsion pendulum due to the fact it shakes the left most wall (see  \cref{schematic}) when people walk through it and leave it swinging aggessively back and forth in the corridor.
+
+%%%%%%%%%%%%%%%%%%%%%%
+%
+%           Conclusion
+%
+%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusion}
+
+ Determination by the analysis of the acceleration of the pendulum yielded the result $7.1(4)\times{10^{-11}}{\rm \ m}^3 {\rm kg}^{-1} {\rm s}^{-2}$. The determination by end deflection analysis was found to be $6.50(17)\times{10^{-11}}{\rm \ m}^3 {\rm kg}^{-1} {\rm s}^{-2}$. Both  results were in agreement of the accepted value of. $6.67\times{10^{-11}}{\rm \ m}^3 {\rm kg}^{-1} {\rm s}^{-2}\cite{nist}$. The influence of random and systematic errors is discussed. The end deflection method was gave more accurate results however, this should be viewed with a cautious optimism. The acceleration method could be improved with extra time steps and ultimately prove a more reliable method with this change. If the measurements are more frequent and if the room is isolated from external noises and temperature/humidity controlled both methods could be improved. 
+
+%%%%%%%%%%%%%%%%%%%%%%
+%
+%           Acknowledgements 
+%
+%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliography{pendulum}
+\bibliographystyle{unsrt}
 
 \end{document}

@@ -1,0 +1,177 @@
+MethodS For Determining G.
+
+Restart and set constant values to be used.
+> restart;
+
+This is the lierature value for G
+> litValue:=6.67384 * 10^(-11);
+                                            -11
+                              6.673840000 10   
+
+Taking 30.01 to be the depth of the housing, I can half that and take away 1mm
+from an estimate.
+The estimate is that the rod holding the two m1 masses is approximately 2mm in
+diameter.
+Since it is holding the mirror in front of it.
+
+> Lo:=(630.5+14+15)*10^(-3);
+                                 0.6595000000
+> b:=((63.01+30.1)*10^(-3))/2;
+                                0.04655500000
+Taken from the first swing S:=20.96*10^(-3);
+> S:=20.939*10^(-3);
+                                0.02093900000
+> alpha := arctan(S/Lo)/2;
+                                0.01586957422
+Alpha is much less than 1.
+> L1 := S*Lo/(2*alpha);
+                                 0.4350863580
+Beta is not that nuch less than 1.
+> beta:=arccos(Lo/L1);
+                                0.9764157875 I
+opposite over hypoteneuse for Beta
+> L:=L1/Lo;
+                                 0.6597215436
+Error from L
+> ((L-Lo)/L)*100;
+                                0.03358138023
+> T:=608.353;
+                                   608.353
+> d:=49.3*10^(-3);
+                                0.04930000000
+> m2:=1.5085;
+                                    1.5085
+> m1:=0.015;
+                                    0.015
+Moment of Inertia of the wee masses m1;
+> 2*m1*d^2;
+                               0.00007291470000
+Deflection
+
+> G:=(S,T)->(Pi^2* S * b^2*d)/ (T^2 * m2*L);
+            2    2  
+          Pi  S b  d
+(S, T) -> ----------
+            2       
+           T  m2 L  
+> evalf(G(S,T));
+                                            -11
+                              5.995397393 10   
+Correction factor.
+> K:= (b^3)/(b^2 + (4*d^2))^(3/2);
+                                0.07783286727
+> Gfin1:=evalf(G(S,T)/(1-K));
+                                            -11
+                              6.501421684 10   
+Gives the percentage accuracy.
+> pe1:=((litValue-Gfin1)/Gfin1);
+                                0.02652009428
+> error1:=(Gfin1*pe1)/10^(-11);
+                                 0.1724183160
+
+Acceleration
+> ao:=(4.4010*10^(-3)*d)/(60*60*L);
+                                             -8
+                               9.135558871 10  
+> G2:=(b^2*ao)/ (2*(m2)*(1-K));
+                                            -11
+                              7.116768405 10   
+> evalf(G2);
+                                            -11
+                              7.116768405 10   
+Gives the percentage accuracy. Error on acceleration value (using 2.5% erorr
+0.77*10^{-11}
+> pe2:=evalf(abs(litValue-G2)/G2);
+                                0.06223729364
+> evalf(G2*pe2);
+                                            -12
+                              4.429284050 10   
+
+Determining G Errors
+> restart;
+
+> G:=(S,T)->(Pi^2* S * b^2*d)/ (T^2 * m2*L);
+            2    2  
+          Pi  S b  d
+(S, T) -> ----------
+            2       
+           T  m2 L  
+> errGrad:=0.6297/(3600);
+                               0.0001749166667
+> dT:=diff(G(S,T),T);
+                                      2    2  
+                                  2 Pi  S b  d
+                                - ------------
+                                     3        
+                                    T  m2 L   
+
+> dS:=diff(G(S,T),S);
+                                     2  2  
+                                   Pi  b  d
+                                   --------
+                                    2      
+                                   T  m2 L 
+> db:=diff(G(S,T),b);
+                                     2      
+                                 2 Pi  S b d
+                                 -----------
+                                    2       
+                                   T  m2 L  
+> dd:=diff(G(S,T),d);
+                                     2    2
+                                   Pi  S b 
+                                   --------
+                                    2      
+                                   T  m2 L 
+> dL:=1*10^(-3);
+                                      1  
+                                     ----
+                                     1000
+> dL:=diff(G(S,T),L);
+                                     2    2  
+                                   Pi  S b  d
+                                 - ----------
+                                     2     2 
+                                    T  m2 L  
+> dm2:=diff(G(S,T),m2);
+                                     2    2  
+                                   Pi  S b  d
+                                 - ----------
+                                     2   2   
+                                    T  m2  L 
+Put in the constant values now.
+> T:=608.353;
+                                   608.353
+> d:=49.3*10^(-3);
+                                0.04930000000
+> m2:=1.5085;
+                                    1.5085
+> b:=((63.01+30.1)*10^(-3))/2;
+                                0.04655500000
+> L:=(630.5+14+15)*10^(-3);
+                                 0.6595000000
+> val:=sqrt((0.02)^2+(dd*errd)^2+(db*errb)^2+(0.011)^2+(dL*errL)^2+(0.01)^2);
+ /                         -17   4  2     2                 -16   4  2     2
+ \0.000621 + 3.465153510 10    Pi  S  errd  + 1.554331494 10    Pi  S  errb 
+
+                    -19   4  2     2\      
+    + 1.936362742 10    Pi  S  errL /^(1/2)
+> errd:=(0.1*10^(-3));
+                               0.0001000000000
+> errb:=0.1*10^(-3);
+                               0.0001000000000
+> errS:=20.96*10^(-3)*0.02;
+                               0.0004192000000
+> errL:=0.1*10^(-3);
+                               0.0001000000000
+> errm2:=0.01*m2;
+                                   0.015085
+Just using the first calculation here to keep it simple.
+> S:=20.96*10^(-3);
+                                0.02096000000
+Percentage error on G.
+> hyevalf(val)*100;
+                        /                                  (1/2)\
+                        |/                         -28   4\     |
+             100 hyevalf\\0.000621 + 8.359337633 10    Pi /     /
+

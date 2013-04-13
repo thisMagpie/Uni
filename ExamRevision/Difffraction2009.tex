@@ -1,0 +1,131 @@
+\documentclass{article}
+\usepackage[svgnames]{xcolor}
+\usepackage{pdfpages}
+\usepackage{tikz}
+\usepackage{animate}
+\usepackage{amsmath}
+
+\usepackage{hyperref} %% to turn the links clickable and load this before cleveref
+\usepackage{cleveref}
+\crefname{table}{table}{tables}
+\Crefname{table}{Table}{Tables}
+\crefname{figure}{figure}{figures}
+\Crefname{figure}{Figure}{Figures}
+\crefname{equation}{equation}{equations}
+\Crefname{Equation}{Equation}{Equation}
+
+
+
+
+\tikzset{
+  every node/.style={
+    anchor=mid west,
+  }
+}
+
+\makeatletter
+\pgfkeys{/form field/.code 2 args={\expandafter\global\expandafter\def\csname field@#1\expandafter\endcsname\expandafter{#2}}}
+
+\newcommand{\place}[3][]{\node[#1] at (#2) {\csname field@#3\endcsname};}
+\makeatother
+
+\newcommand{\xmark}[1]{\node at (#1) {X};}
+
+
+
+\begin{document}
+
+\foreach \mykey/\myvalue in {
+  ctsfn/{This is from tutorial question 2.2},
+  metsp/{This is in a tutorial},
+} {
+  \pgfkeys{/form field={\mykey}{\myvalue}}
+}
+
+\includepdf[
+  pages=2,
+  picturecommand={%
+    \begin{tikzpicture}[remember picture,overlay]
+\tikzset{every node/.append style={fill=Honeydew,font=\large}}
+\place[name=ctsfn]{0cm,22cm}{ctsfn}
+\place[name=metsp]{1cm,13cm}{metsp}
+\draw[ultra thick,blue,->] (ctsfn) to[out=120,in=90] (5cm,17.3cm);
+\draw[ultra thick,blue,->] (metsp) to[out=130,in=60] (4cm,14cm);
+    \end{tikzpicture}
+  }
+]{diffraction2009.pdf}
+\section*{A.1}
+
+For a cavity of reflectivity $R$ half height intensity given by \cref{eq:intensityhalf} is shown in \cref{eq:reflectivityhalf}
+
+\begin{equation}
+\label{eq:intensityhalf}
+I=\frac{I_{0}} {2}
+\end{equation}
+
+\begin{equation}
+\label{eq:reflectivityhalf}
+\frac{I_{0}} {2}=\frac{I_{0}(1-R)^{2}} {(1-R)^{2}+4Rsin^{2}(\frac{\delta}{2})}\implies (1-R)^{2} =\frac{1}{2}(1-R)^{2} +4R\mathrm{sin^{2}\left(\frac{\delta}{2}\right)}
+\end{equation}
+
+In this problem we are given that $R=0.9$ so if we substitute this value in we can solve for $\delta$ 
+
+\begin{equation}
+\label{eq:delta}
+1=\frac{4R\mathrm{sin^{2}\left(\frac{\delta}{2}\right)}}{(1-R)^{2}}\implies \mathrm{sin^{2}{\left(\frac{\delta}{2}\right)}}=\frac{(1-R)^{2}}{4R}\implies \mathrm{sin{\left(\frac{\delta}{2}\right)}}=\frac{(1-R)}{2\sqrt{R}}
+\end{equation}
+If we assume that the peak is narrow this allows us to perform a small angle approximation so that $\mathrm{sin}\left(\frac{\delta}{2}\right)\approx\left(\frac{\delta}{2}\right)$. Therefore our final expression for delta is given by \cref{eq:deltafin}
+
+\begin{equation}
+\label{eq:deltafin}
+\delta=\frac{(1-R)}{\sqrt{R}}=\frac{(1-0.9)}{\sqrt{0.9}}=0.1054
+\end{equation}
+
+Which we can us to determine the wavelength from this expression given in the question with $n=1$ and $d=1$ and the answer is 
+shown in \cref{eq:deltawav} which gives the full wavelength of the monoquasichomatic light source at half height FWH
+
+\begin{equation}
+\label{eq:deltawav}
+\delta=\frac{4\pi d n }{\lambda}\implies \lambda=\frac{4\pi d n }{\delta}= \lambda=\frac{4\pi }{0.1054}=119.22\mathrm{m}
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%% A2 %%%%%%%%%%%%%%%%%%
+\section*{A.2}
+The Rayleigh limit of angular resolution is shown \cref{eq:rayleigh}
+
+\begin{table}[htdp]
+\caption{default}
+\begin{center}
+\begin{tabular}{|c|c|}
+ & n \\
+\hline
+$\mathrm{Mg F_{2}}$ & 1.38 \\
+$\mathrm{Al_{2}O_{3}}$ & 1.62
+
+\end{tabular}
+\end{center}
+\label{default}
+\end{table}%
+
+\begin{equation}
+\label{eq:rayleigh}
+\Delta \theta_{0}=\frac{1.22 D}{\lambda}
+\end{equation}
+
+
+
+\includepdf[
+  pages=3,
+  picturecommand={%
+    \begin{tikzpicture}[remember picture,overlay]
+\tikzset{every node/.append style={fill=Honeydew,font=\large}}
+\place[name=ctsfn]{11cm,10cm}{ctsfn}
+\place[name=metsp]{11cm,9cm}{metsp}
+\draw[ultra thick,blue,->] (ctsfn) to[out=135,in=90] (9cm,17.3cm);
+\draw[ultra thick,blue,->] (metsp) to[out=155,in=70] (6cm,9cm);
+    \end{tikzpicture}
+  }
+]{diffraction2009.pdf}
+
+\end{document}

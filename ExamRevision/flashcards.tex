@@ -1,0 +1,353 @@
+%
+% physicsflashcards
+% =============
+% Copyright (C) 2013 Magdalen Berns with acknowledgement to the 
+% users of tex.stackexchange.com for their generous contribution towards the formatting. 
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+\documentclass{article}
+\usepackage[paperwidth=.47\paperwidth,paperheight=.25\paperheight]{geometry}
+\usepackage{pgfpages}
+\usepackage[english]{babel}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\pagestyle{empty}
+\thispagestyle{empty}
+
+\pgfpagesuselayout{8 on 1}[a4paper]
+\makeatletter
+\@tempcnta=1\relax
+\loop\ifnum\@tempcnta<9\relax
+\pgf@pset{\the\@tempcnta}{bordercode}{\pgfusepath{stroke}}
+
+\advance\@tempcnta by 1\relax
+\repeat
+\makeatother
+
+
+\newenvironment{flashcard}[2][]
+  {\noindent\textsc{\Large#1}\par\vfill
+   {\centering\Large#2\par}
+   \vfill
+   \newpage\Large\centering
+  }
+  {\newpage}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{flashcard}[Thermodynamics]{Describe what is meant by a system}
+Describe what is meant by a system in thermodynamics.
+
+\vspace*{\stretch{1}}
+A system is a particular part of the universe.
+\vspace*{\stretch{1}}
+\newline
+
+\end{flashcard}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{flashcard}[Thermodynamics]{Describe what is meant by the surroundings of a system}
+Describe what is meant by the surroundings of a system in thermodynamics
+
+\vspace*{\stretch{1}}
+The part of the universe which is outside (i.e. surrounding) a system.
+\vspace*{\stretch{1}}
+\end{flashcard}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{flashcard}[Thermodynamics]{Describe the boundary of a system}
+
+\vspace*{\stretch{1}}
+The boundary (or wall) of a system is the thing which separates it from its surroundings.
+
+\vspace*{\stretch{1}}
+\end{flashcard}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{flashcard}[Electromagnetism]{Explain Gauss' law for an electric field in words.}
+
+\vspace*{\stretch{1}}
+The total electric flux through any closed surface is proportional to its enclosed charge.
+\vspace*{\stretch{1}}
+\end{flashcard}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{flashcard}[Thermodynamics]{Describe a closed system}
+
+\vspace*{\stretch{1}}
+A closed system is a system where no matter is exchanged, only energy.
+\vspace*{\stretch{1}}
+\end{flashcard}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{flashcard}[Thermodynamics]{Describe how adiabatic walls.}
+
+\vspace*{\stretch{1}}
+Adiabatic walls prevent thermal interaction (i.e. heat exchange)
+\vspace*{\stretch{1}}
+\end{flashcard}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{flashcard}[Thermodynamics]{What type of walls does a thermally isolated system have?}
+\vspace*{\stretch{1}}
+A thermally isolated system has adiabatic walls.
+\vspace*{\stretch{1}}
+\end{flashcard}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{flashcard}[Electromagnetism]{What is Maxwell's II and what does it express?}
+\vspace*{\stretch{1}}
+$$\nabla \cdot \mathbf{B} = 0$$
+There are no magnetic monopoles.
+\vspace*{\stretch{1}}
+\end{flashcard}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{flashcard}[Statistical Mechanics]{￼￼￼￼What is the equilibrium entropy of an isolated system of N constituents with energy E?}
+Equilibrium entropy of an isolated system is expressed as follows:
+\vspace*{\stretch{1}}
+$$S(N, E) = \mathrm{k ln \Omega(N, E, {\alpha*})}$$
+\vspace*{\stretch{1}}
+
+\end{flashcard}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{flashcard}[Diffraction physics]{Define the electric displacement of a dielectric.}
+\vspace*{\stretch{1}}
+$$\underline{D}=\epsilon_0 \underline{E}+\underline{P}$$
+Where $ \mathbf{E}$ is the electric field, $\mathbf{P}$ is the polarisation
+\vspace*{\stretch{1}}
+
+\end{flashcard}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{flashcard}[Diffraction Physics]{What are the refractive indices of $\mathrm{Mg F_{2}}$ and $\mathrm{Al_{2}O_{3}}$ ?}
+
+\begin{table}[htdp]
+\caption{A table of refractive indices}
+\begin{tabular}{| r | c | r | c | r |}
+\hline
+Material & Symbol & n \\
+\hline
+Magnesium Fluoride & $\mathrm{Mg F_{2}}$ & 1.38 \\
+Aluminium Oxide & $\mathrm{Al_{2}O_{3}}$ & 1.62 \\
+\hline
+\end{tabular}
+\label{default}
+\end{table}%
+\end{flashcard}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flashcard}[Quantum Mechanics]{What is the wave function for a free particle?}
+The quantum mechanical interpretation of a free particle is expressed as follows
+\vspace*{\stretch{1}}
+$$\psi(\mathbf{r},t)=C e^{\frac{i}{\hbar}(\mathbf{p}\cdot \mathbf{r}-\epsilon t)}$$
+\vspace*{\stretch{1}}
+
+\end{flashcard}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{flashcard}[Electromagnetism]{Express the force between two charges.}
+The force between two charges, $q_{1}$ and $q_{2}$ that a separated by a distance $r$ should be expressed as follows:
+\vspace*{\stretch{1}}
+$$\mathbf{F}=\frac{q_{1} q_{2}}{4\pi \epsilon_{0} r^2} \mathbf{r} $$
+\vspace*{\stretch{1}}
+Where $\epsilon_{0}$ is the permittivity of free space.
+
+\end{flashcard}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{flashcard}[Electromagnetism]{What is the total charge contained within a volume?}
+\vspace*{\stretch{1}}
+$$Q_v=\int_{V}{\rho(\underline{r})dV}$$
+Where $\rho$ is the sum of the charges.\vspace*{\stretch{1}}
+
+\end{flashcard}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{flashcard}[Diffraction Physics]{What happens when we apply a field to an electrically insulating material such as glass?}
+\vspace*{\stretch{1}}
+The charges will separate causing a polarisation in the material.
+\vspace*{\stretch{1}}
+
+\end{flashcard}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{flashcard}[Electromagnetism]{What is Maxwells I?}
+What is Maxwells I?
+
+\vspace*{\stretch{1}}
+$\nabla \cdot \mathbf{E} = \frac {\rho} {\epsilon_0}$
+\vspace*{\stretch{1}}
+
+\end{flashcard}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{flashcard}[Electromagnetism]{What is Maxwells II?}
+What is Maxwells II?
+
+\vspace*{\stretch{1}}
+$\nabla \cdot \mathbf{B} = 0$
+\vspace*{\stretch{1}}
+
+\end{flashcard}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{flashcard}[Electromagnetism]{What is Maxwells III?}
+What is Maxwells III?
+
+\vspace*{\stretch{1}}
+$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}} {\partial t}$
+\vspace*{\stretch{1}}
+
+\end{flashcard}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{flashcard}[Electromagnetism]{What is Maxwells IV?}
+What is Maxwells IV?
+
+\vspace*{\stretch{1}}
+
+$\nabla \times \mathbf{B} = \mu_0 \left( \mathbf{J} + \epsilon_0 \frac{\partial \mathbf{E}} {\partial t} \right)$
+\vspace*{\stretch{1}}
+
+\end{flashcard}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{flashcard}[Diffraction Physics]{What is the expression for intensity reflectance}
+What is the expression for intensity reflectance at normal incidence?
+
+
+\vspace*{\stretch{1}}
+r = $\frac{n_1-n_2}{n_1+n_2}$
+\vspace*{\stretch{1}}
+
+\end{flashcard}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{flashcard}[Quantum Mechanics]{What is the creation operator for a harmonic oscillator of mass, m and frequency $\omega$}
+What is the creation operator for a harmonic oscillator of mass, m and frequency $\omega$
+
+\vspace*{\stretch{1}}
+$\hat{a}=\frac{m\omega}{2\hbar}\hat{x}+i\sqrt{\frac{1}{2m\omega\hbar}}\hat{p}$
+
+\vspace*{\stretch{1}}
+
+\end{flashcard}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{flashcard}[Quantum Mechanics]{What is the annihilation operator for a harmonic oscillator of mass, m and frequency $\omega$}
+What is the creation operator for a harmonic oscillator of mass, m and frequency $\omega$
+
+\vspace*{\stretch{1}}
+$\hat{a}=\frac{m\omega}{2\hbar}\hat{x}-i\sqrt{\frac{1}{2m\omega\hbar}}\hat{p}$
+
+\vspace*{\stretch{1}}
+
+\end{flashcard}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{flashcard}[Quantum Mechanics]{Express the Hamiltonian}
+Express the Hamiltonian
+
+\vspace*{\stretch{1}}
+$$i\hbar\frac{\partial{\psi}}{\partial t}=\hat{H}\psi$$
+\vspace*{\stretch{1}}
+
+\end{flashcard}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{flashcard}[Thermodynamics]{What is Classius statement of the second law?}
+What is Classius statement of the second law?
+
+\vspace*{\stretch{1}}
+\small{It is impossible to construct a device that, operating in a cycle, produces no effect other than the transfer of heat from a colder to a hotter body.}
+
+\vspace*{\stretch{1}}
+
+\end{flashcard}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{flashcard}[Thermodynamics]{What is the Kelvin-Planck statement of the second law?}
+What is Kelvin-Planck statement of the second law?
+
+\vspace*{\stretch{1}}
+\small{It is impossible to construct a device that, operating in a cycle, produces no effect other than the extraction of heat from a single body at a uniform temperature 
+and performance of an equivalent amount of work.}
+
+\vspace*{\stretch{1}}
+
+\end{flashcard}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{flashcard}[Thermodynamics]{What are the main consequences of the first law of thermodynamics?}
+What are the main consequences of the first law of thermodynamics?
+
+\vspace*{\stretch{1}}
+\begin{enumerate}
+\item Heat is a form of energy
+\item Energy is conserved in thermal processes
+\end{enumerate}
+
+\vspace*{\stretch{1}}
+
+\end{flashcard}
+
+
+
+\end{document}

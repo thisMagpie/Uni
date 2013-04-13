@@ -1,5 +1,35 @@
 \begin{thebibliography}{1}
 
+\bibitem{nist}
+J.~H. {Gundlach} and S.~M. {Merkowitz}.
+\newblock {Measurement of Newton's Constant Using a Torsion Balance with
+  Angular Acceleration Feedback}.
+\newblock {\em Physical Review Letters}, 85:2869--2872, October 2000.
+
+\bibitem{density}
+A.S. Mackenzie, I.~Newton, and H.~Cavendish.
+\newblock {\em The Laws of Gravitation: Memoirs by Newton, Bouguer and
+  Cavendish, Together with Abstracts of Other Important Memoirs}.
+\newblock Scientific memoirs, 9. American Book Company, 1900.
+
+\bibitem{densearth}
+A.S. Mackenzie, I.~Newton, and H.~Cavendish.
+\newblock {\em The Laws of Gravitation: Memoirs by Newton, Bouguer and
+  Cavendish, Together with Abstracts of Other Important Memoirs}.
+\newblock Scientific memoirs, 9. American Book Company, 1900.
+
+\bibitem{newton}
+I.~Newton, A.~Motte, and N.W. Chittenden.
+\newblock {\em Newton's Principia: The Mathematical Principles of Natural
+  Philosophy}.
+\newblock Newton's Principia: The Mathematical Principles of Natural
+  Philosophy. Daniel Adee, 1848.
+
+\bibitem{manual}
+{Pasco Scientific}.
+\newblock Instruction manual.
+\newblock [Online ] Available from: http://phys.ed.ac.uk.
+
 \bibitem{me}
 {Magdalen Berns}.
 \newblock \emph{Java program for Data Analysis}, 2013.

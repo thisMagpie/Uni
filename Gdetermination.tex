@@ -1,0 +1,515 @@
+%% Created by Maple 16.00, Mac OS X
+%% Source Worksheet: Gdetermination.mw
+%% Generated: Wed Apr 03 12:00:20 BST 2013
+\documentclass{article}
+\usepackage{maplestd2e}
+\def\emptyline{\vspace{12pt}}
+\begin{document}
+\pagestyle{empty}
+\DefineParaStyle{Maple Heading 1}
+\DefineParaStyle{Maple Text Output}
+\DefineParaStyle{Maple Dash Item}
+\DefineParaStyle{Maple Bullet Item}
+\DefineParaStyle{Maple Normal}
+\DefineParaStyle{Maple Heading 4}
+\DefineParaStyle{Maple Heading 3}
+\DefineParaStyle{Maple Heading 2}
+\DefineParaStyle{Maple Warning}
+\DefineParaStyle{Maple Title}
+\DefineParaStyle{Maple Error}
+\DefineCharStyle{Maple Hyperlink}
+\DefineCharStyle{Maple 2D Math}
+\DefineCharStyle{Maple Maple Input}
+\DefineCharStyle{Maple 2D Output}
+\DefineCharStyle{Maple 2D Input}
+\begin{maplegroup}
+\begin{Maple Normal}{
+MethodS For Determining G.}\end{Maple Normal}
+\textbf{restart;}\textbf{}\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+}\end{Maple Normal}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+This is the lierature value for G}\end{Maple Normal}
+
+\textbf{litValue:=6.67384 * 10\symbol{94}(-11);}\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{litValue := 6.673840000*10^(-11)}{\[\displaystyle {\it litValue}\, := \,{ 6.673840000\times 10^{-11}}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+}\end{Maple Normal}
+\begin{Maple Normal}{
+Taking 30.01 to be the depth of the housing, I can half that and take away 1mm from an estimate.}\end{Maple Normal}
+
+\begin{Maple Normal}{
+The estimate is that the rod holding the two m1 masses is approximately 2mm in diameter.}\end{Maple Normal}
+
+\begin{Maple Normal}{
+Since it is holding the mirror in front of it.}\end{Maple Normal}
+
+\begin{Maple Normal}{
+}\end{Maple Normal}
+\textbf{Lo:=(630.5+14+10)*10\symbol{94}(-3);}\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{Lo := .6545000000}{\[\displaystyle {\it Lo}\, := \, 0.6545000000\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{b:=((63.01+30.1)*10\symbol{94}(-3))/2;
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{b := 0.4655500000e-1}{\[\displaystyle b\, := \, 0.04655500000\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+Taken from the first swing S:=20.96*10\symbol{94}(-3);}\end{Maple Normal}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{S:=20.96*10\symbol{94}(-3);
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{S := 0.2096000000e-1}{\[\displaystyle S\, := \, 0.02096000000\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{alpha:=arctan(S/Lo)/2;
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{alpha := 0.1600675258e-1}{\[\displaystyle \alpha\, := \, 0.01600675258\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+Alpha is much less than 1.}\end{Maple Normal}
+
+\textbf{L1:=S*Lo/(2*alpha);}\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{L1 := .4285166504}{\[\displaystyle {\it L1}\, := \, 0.4285166504\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+Beta is not that nuch less than 1.}\end{Maple Normal}
+
+\textbf{beta:=arccos(Lo/L1);}\begin{mapleinput}
+\mapleinline{active}{1d}{}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{beta := .9865054881*I}{\[\displaystyle \beta\, := \, 0.9865054881\,i\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+opposite over hypoteneuse.}\end{Maple Normal}
+
+\textbf{L:=L1/Lo;}\mapleinline{inert}{2d}{}{$\displaystyle $}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{L := .6547236828}{\[\displaystyle L\, := \, 0.6547236828\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+Error from L}\end{Maple Normal}
+
+\textbf{((L-Lo)/L)*100;}\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{0.3416445836e-1}{\[\displaystyle  0.03416445836\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{T:=608.353;
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{T := 608.353}{\[\displaystyle T\, := \, 608.353\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{d:=49.3*10\symbol{94}(-3);
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{d := 0.4930000000e-1}{\[\displaystyle d\, := \, 0.04930000000\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{m2:=1.5085;
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{m2 := 1.5085}{\[\displaystyle {\it m2}\, := \, 1.5085\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{m1:=0.015;
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{m1 := 0.15e-1}{\[\displaystyle {\it m1}\, := \, 0.015\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+Moment of Inertia of the wee masses m1;}\end{Maple Normal}
+
+\textbf{2*m1*d\symbol{94}2;}\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{0.7291470000e-4}{\[\displaystyle  0.00007291470000\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{}{}
+\end{mapleinput}
+\end{maplegroup}
+\section{\textbf{Deflection}}
+\begin{maplegroup}
+\begin{Maple Normal}{
+}\end{Maple Normal}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{G:=(S,T)->(Pi\symbol{94}2* S * b\symbol{94}2*d)/ (T\symbol{94}2 * m2*L); 
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{G := proc (S, T) options operator, arrow; Pi^2*S*b^2*d/(T^2*m2*L) end proc}{\[\displaystyle G\, := \,( {S,T} )\mapsto  0.0001082242577\,{\frac {{\pi }^{2}S}{{T}^{2}}}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{evalf(G(S,T));
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{6.047222270*10^(-11)}{\[\displaystyle { 6.047222270\times 10^{-11}}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+Correction factor.}\end{Maple Normal}
+
+\textbf{K:= (b\symbol{94}3)/(b\symbol{94}2 + (4*d\symbol{94}2))\symbol{94}(3/2);}\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{K := 0.7783286727e-1}{\[\displaystyle K\, := \, 0.07783286727\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{Gfin1:=evalf(G(S,T)/(1-K));
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{Gfin1 := 6.557620691*10^(-11)}{\[\displaystyle {\it Gfin1}\, := \,{ 6.557620691\times 10^{-11}}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+Gives the percentage accuracy.}\end{Maple Normal}
+
+\textbf{((litValue-Gfin1)/Gfin1)*100;}\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{1.772278613}{\[\displaystyle  1.772278613\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplelatex}\begin{Maple Normal}{
+}\end{Maple Normal}
+\end{maplelatex}
+\section{\textbf{Acceleration}}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{ao:=(3.977 *d*10\symbol{94}(-3))/(3600*L);}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{ao := 8.318441348*10^(-8)}{\[\displaystyle {\it ao}\, := \, 0.00000008318441348\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{G2:=(b\symbol{94}2*ao)/ (2*m2);}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{G2 := 5.975844815*10^(-11)}{\[\displaystyle {\it G2}\, := \,{ 5.975844815\times 10^{-11}}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{Gfin2:=evalf(G2/(1-K));
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{Gfin2 := 6.480218827*10^(-11)}{\[\displaystyle {\it Gfin2}\, := \,{ 6.480218827\times 10^{-11}}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+Gives the percentage accuracy. Error on acceleration value (using 2.5\% erorr 0.77*10\symbol{94}\{-11\}}\end{Maple Normal}
+
+\textbf{((litValue-Gfin2)/Gfin2)*100;}\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{2.987880165}{\[\displaystyle  2.987880165\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplelatex}\begin{Maple Normal}{
+}\end{Maple Normal}
+\end{maplelatex}
+\begin{maplegroup}
+\begin{Maple Normal}{
+Determining G Errors}\end{Maple Normal}
+
+\begin{Maple Normal}{
+}\end{Maple Normal}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{restart;
+}{}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{G:=(S,T)->(Pi\symbol{94}2* S * b\symbol{94}2*d)/ (T\symbol{94}2 * m2*L); 
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{G := proc (S, T) options operator, arrow; Pi^2*S*b^2*d/(T^2*m2*L) end proc}{\[\displaystyle G\, := \,( {S,T} )\mapsto  0.0001082242577\,{\frac {{\pi }^{2}S}{{T}^{2}}}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+}\end{Maple Normal}
+\textbf{dT:=diff(G(S,T),T);}\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{dT := -2*Pi^2*S*b^2*d/(T^3*m2*L)}{\[\displaystyle {\it dT}\, := \,-2\,{\frac {{\pi }^{2}S{b}^{2}d}{{T}^{3}{\it m2}\,L}}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{dS:=diff(G(S,T),S);
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{dS := Pi^2*b^2*d/(T^2*m2*L)}{\[\displaystyle {\it dS}\, := \,{\frac {{\pi }^{2}{b}^{2}d}{{T}^{2}{\it m2}\,L}}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{db:=diff(G(S,T),b);
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{db := 2*Pi^2*S*b*d/(T^2*m2*L)}{\[\displaystyle {\it db}\, := \,2\,{\frac {{\pi }^{2}Sbd}{{T}^{2}{\it m2}\,L}}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{dd:=diff(G(S,T),d);
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{dd := Pi^2*S*b^2/(T^2*m2*L)}{\[\displaystyle {\it dd}\, := \,{\frac {{\pi }^{2}S{b}^{2}}{{T}^{2}{\it m2}\,L}}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{dL:=1*10\symbol{94}(-3);
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{dL := 1/1000}{\[\displaystyle {\it dL}\, := \,{\frac {1}{1000}}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{dL:=diff(G(S,T),L);
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{dL := -Pi^2*S*b^2*d/(T^2*m2*L^2)}{\[\displaystyle {\it dL}\, := \,-{\frac {{\pi }^{2}S{b}^{2}d}{{T}^{2}{\it m2}\,{L}^{2}}}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{dm2:=diff(G(S,T),m2);
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{dm2 := -Pi^2*S*b^2*d/(T^2*m2^2*L)}{\[\displaystyle {\it dm2}\, := \,-{\frac {{\pi }^{2}S{b}^{2}d}{{T}^{2}{{\it m2}}^{2}L}}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+Put in the constant values now.}\end{Maple Normal}
+
+\textbf{T:=608.353;}\textbf{}\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{T := 608.353}{\[\displaystyle T\, := \, 608.353\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{d:=49.3*10\symbol{94}(-3);}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{d := 0.4930000000e-1}{\[\displaystyle d\, := \, 0.04930000000\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{m2:=1.5085;}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{m2 := 1.5085}{\[\displaystyle {\it m2}\, := \, 1.5085\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{b:=((63.01+30.1)*10\symbol{94}(-3))/2;}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{b := 0.4655500000e-1}{\[\displaystyle b\, := \, 0.04655500000\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{L:=(630.5+14+10)*10\symbol{94}(-3);}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{L := .6545000000}{\[\displaystyle L\, := \, 0.6545000000\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{val:=sqrt((0.02)\symbol{94}2+(dd*errd)\symbol{94}2+(db*errb)\symbol{94}2+(0.011)\symbol{94}2+(dL*errL)\symbol{94}2+(0.01)\symbol{94}2);
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{val := sqrt(0.621e-3+3.518299261*10^(-17)*Pi^4*S^2*errd^2+1.578170585*10^(-16)*Pi^4*S^2*errb^2+1.996214995*10^(-19)*Pi^4*S^2*errL^2)}{\[\displaystyle {\it val}\, := \, \sqrt{ 0.000621+{ 3.518299261\times 10^{-17}}\\
+\mbox{}\,{\pi }^{4}{S}^{2}{{\it errd}}^{2}+{ 1.578170585\times 10^{-16}}\\
+\mbox{}\,{\pi }^{4}{S}^{2}{{\it errb}}^{2}\\
+\mbox{}+{ 1.996214995\times 10^{-19}}\\
+\mbox{}\,{\pi }^{4}{S}^{2}{{\it errL}}^{2}}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{errd:=0.1*10\symbol{94}(-3);
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{errd := 0.1000000000e-3}{\[\displaystyle {\it errd}\, := \, 0.0001000000000\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{errb:=0.1*10\symbol{94}(-3);
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{errb := 0.1000000000e-3}{\[\displaystyle {\it errb}\, := \, 0.0001000000000\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{errS:=20.96*10\symbol{94}(-3)*0.02;
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{errS := 0.4192000000e-3}{\[\displaystyle {\it errS}\, := \, 0.0004192000000\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{errL:=0.1*10\symbol{94}(-3);
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{errL := 0.1000000000e-3}{\[\displaystyle {\it errL}\, := \, 0.0001000000000\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{errm2:=0.01*m2;
+}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{errm2 := 0.15085e-1}{\[\displaystyle {\it errm2}\, := \, 0.015085\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+Just using the first calculation here to keep it simple.}\end{Maple Normal}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{S:=20.96*10\symbol{94}(-3);}{}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{S := 0.2096000000e-1}{\[\displaystyle S\, := \, 0.02096000000\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{Maple Normal}{
+Percentage error on G.}\end{Maple Normal}
+
+\textbf{evalf(val)*100;}\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{2.491987159}{\[\displaystyle  2.491987159\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{}{}
+\end{mapleinput}
+\end{maplegroup}
+\end{document}

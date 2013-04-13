@@ -12,28 +12,15 @@
 \mode<presentation>
 {
     \usetheme{Berlin}
-    \useoutertheme[subsection=false]{miniframes}
-    \usefonttheme[onlylarge]{structuresmallcapsserif}
+%   \useoutertheme[subsection=false]{miniframes}
+%    \usefonttheme[onlylarge]{structuresmallcapsserif}
     \setbeamercovered{transparent}
 }
 
 \title{\huge{The Determination of G}}
-\author{{Magdalen Berns}}% (optional, for multiple authors)
+\author{{Magdalen Berns}}
 \date{\today}
 
-    \setbeamertemplate{headline}
-    {%
-      \begin{beamercolorbox}{section in foot}
-        \vskip2pt\insertnavigation{\paperwidth}\vskip2pt
-      \end{beamercolorbox}%
-    }
-
-    \setbeamertemplate{headline}
-    {%
-      \begin{beamercolorbox}{section in foot}
-        \vskip2pt\insertnavigation{\paperwidth}\vskip2pt
-      \end{beamercolorbox}%
-    }
 
 
 \setbeamercolor{alerted text}{fg=black}
@@ -43,7 +30,7 @@
 \setbeamercolor{block body example}{bg=normal text.bg!90!white}
 \setbeamercolor{block title}{bg=gray}
 \setbeamercolor{fine separation line}{}
-\setbeamercolor{frametitle}{fg=white}
+\setbeamercolor{frametitle=gray}{fg=white}
 \setbeamercolor{normal text}{bg=black,fg=black}
 \setbeamercolor{palette sidebar primary}{use=normal text,fg=normal text.fg}
 \setbeamercolor{palette sidebar quaternary}{use=structure,fg=structure.fg}
@@ -128,34 +115,36 @@
 
 
 \begin{frame}{Two Methods}
+	\framesubtitle{Why?}
+
     \begin{columns}[c] % the "c" option specifies center vertical alignment
     \column{.5\textwidth} % column designated by a command
-     \begin{itemize}
+     \begin{itemize}[<+->]
+     
      \item End Deflection
+     \item Uses equation
      \end{itemize}
          \column{.5\textwidth}
-     Acceleration\\ Not as good.
+              \begin{itemize}[<+->]
+     
+     \item Acceleration.
+     \item Uses Gradient 
+     
+     \end{itemize}
+
     \end{columns}
 \end{frame}
 
-
-\begin{frame}
-\frametitle[Gravitational Constant]{Set Up}
-   
-   \centering
-   \begin{figure}[<+->]
-\includegraphics[width=5.5cm, height=5cm]{images/map.png}
-\label{fig:cab}
-\end{figure}
-\end{frame}
 
 
 \begin{frame}
 \frametitle[Gravitational Constant]{End Deflection}
 \framesubtitle{How it works.}
-\begin{itemize}
-\item  $G=\frac{\pi^2* S * b^2*d}{T^2 * m2*L}{\rm \ m}^3 {\rm kg}^{-1} {\rm s}^{-2}$
-\item That's pretty much it.
+\begin{itemize}[<+->]
+\item  $$G=\frac{\pi^2 \Delta{S}  b^2 d}{T^2 m_{2} L}{\rm \ m}^3 {\rm kg}^{-1} {\rm s}^{-2}$$
+\item That's pretty much as exciting as it gets.
+\item Well almost.... Here's my result 
+\item $6.56(16)\times{10^{-11}}{\rm \ m}^3 {\rm kg}^{-1} {\rm s}^{-2}$!!!
 \end{itemize}
 \end{frame}
 
@@ -163,49 +152,53 @@
 \begin{frame}
 \frametitle[Gravitational Constant]{Acceleration}
 \framesubtitle{How it works.}
-\begin{itemize}
-\item $G=\frac{a_{0} b^2 }{ 2 m_{2}}$
+\begin{itemize}[<+->]
+\item $G=\frac{a_{0} b^2 }{ 2 m_{2}}{\rm \ m}^3 {\rm kg}^{-1} {\rm s}^{-2}$
 \item Where:
 \item $a_{0}=\frac{L}{d}=\text{gradient of linear fit}$
-   \item $\frac{a_{o}L}{d}$ is the slope of linear graph
-   \item  $\alpha$ is much less than 1.
-\item $L_{1}=\frac{S*L_{o}}{2*\alpha}$
+\item $\frac{a_{o}L}{d}$ is the slope of linear graph
+\item Here's my result:
+\item $6.67(13)\times{10^{-11}}{\rm \ m}^3 {\rm kg}^{-1} {\rm s}^{-2}$!!!
+
+
    \end{itemize}
-   
+
 
 \end{frame}
 
 
 \begin{frame}
-\frametitle[Gravitational Constant]{Acceleration}
-\framesubtitle{Reproducibility issues:}
+\frametitle[Gravitational Constant]{Acceleration Downsides}
+\framesubtitle{Reproducibility is questionable}
    \begin{itemize}
-   \item  Not Enough data points
-   \item  Hard to \enquote{swing} it the same way every time.
-   \item $a_{o}$ is the slope of linear graph
+   \item  Not Enough data points.
+   \item  Hard to swing it the same way, every time.
+   \item $a_{o}$ is the slope of linear graph.
    \end{itemize}
 
-$$G=\frac{a_{o} b^2 }{ 2 m_{2}}$$
-Where
-$$a_{0}=\frac{\Delta S d}{t^{2} L}$$
 \end{frame}
 
+\begin{frame}
+\frametitle[Gravitational Constant]{Acceleration Upsides}
+\framesubtitle{Damping and Crashing}
+   \begin{itemize}
+   \item  Does not matter too much about damping.
+   \item  Don't need to wait too long to get results.
+   \item With different software you can record more time steps.
+   \end{itemize}
 
+\end{frame}
 
 \begin{frame}
+\centering
 \frametitle[Gravitational Constant]{Main Result}
-\includegraphics[width=7cm, height=4cm]{graphs/mainresult}
-Here is a look at the main result used 
+\includegraphics[scale=0.8]{graphs/mainresult}
 \end{frame}
 
 \begin{frame}
 \frametitle[Gravitational Constant]{Acceleration}
-
-\begin{figure}[H]
-\includegraphics[width=6cm, height=4cm]{images/linear}
-\caption{Acceleration from the second curve sloping downwards. The first six points were recorded up to 1.5 minutes. This yielded a result of $6.5(2)\times{10^{-11}}{\rm \ m}^3 {\rm kg}^{-1} {\rm s}^{-2}$}
-\label{fig:mainresult}
-\end{figure}
+\centering
+\includegraphics[scale=0.8]{images/linear}
 \end{frame}
 
 \begin{frame}
@@ -215,7 +208,6 @@ Here is a look at the main result used
      \begin{columns}[t] % contents are top vertically aligned
      \begin{column}[T]{5cm} % each column can also be its own environment
        Want: $$\tau_{g}=2F_{0}d=\frac{2 G m_{1}m_{2}}{b^{2}}$$
- \\ But:
      \end{column}
      \begin{column}[T]{5cm} % alternative top-align that's better for graphics
           \includegraphics[height=3.5cm]{images/forces.png}
@@ -223,14 +215,22 @@ Here is a look at the main result used
      \end{column}
      \end{columns}
 \end{frame}
-
-
 \begin{frame}
 \frametitle[Gravitational Constant]{Random Errors}
+\framesubtitle{High risk zones}
+   
+\includegraphics[width=5.0cm, height=5cm]{images/map.png}
+\end{frame}
+
+\begin{frame}
+\frametitle[Gravitational Constant]{Analysis}
 \centering
 \begin{itemize}
-\item The Acceleration was analysed using a java program
-\item end deflection was analysed using CASSY Lab
+\item The Acceleration was analysed using my java program
+\item The graphs with pgfplots
+\item End deflection was analysed using CASSY Lab for $\Delta{S}$
+\item Maple for the algebra
+
 \end{itemize}
 
 \end{frame}
@@ -249,14 +249,13 @@ Here is a look at the main result used
 \end{itemize}
 \end{frame}
 
-
 \begin{frame}
 \frametitle[Gravitational Constant]{Error on G}
 \centering
-$$\sqrt{\left(\frac{\partial^{2}{G}}{\partial{}{a}^{2}}\Delta{a}\right)^{2}
+$$\sigma_{G}=\sqrt{\left(\frac{\partial^{2}{G}}{\partial{}{a}^{2}}\Delta{a}\right)^{2}
 +\left(\frac{\partial^{2}{G}}{\partial{b}^{2}}\Delta{b}\right)^{2}}$$
 
-For b, d, $m_{1}$ and $\Delta{S}$ and the error on L cancelled out $\frac{L_{o}}{L}$.
+For b, d, $m_{1rf}$, T $\Delta{S}$ and L
 
 \end{frame}
 
@@ -266,6 +265,7 @@ For b, d, $m_{1}$ and $\Delta{S}$ and the error on L cancelled out $\frac{L_{o}}
 \begin{itemize}
 \item If the measurements are more exact
 \item If the room is isolated from external noises and temperature/humidity controlled.
+\item More time steps are recorded.
 \end{itemize}
 \end{frame}
 

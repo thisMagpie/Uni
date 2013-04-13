@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.2.12)  1 APR 2013 06:02
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.2)  4 APR 2013 14:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -14,9 +14,9 @@ h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
 ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
 rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
 kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
- polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
-lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
-welsh, loaded.
+ piedmontese, polish, portuguese, romanian, romansh, russian, sanskrit, serbian
+, serbianc, slovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, u
+ppersorbian, welsh, loaded.
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/size12.clo
@@ -35,7 +35,7 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \bibindent=\dimen102
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
@@ -55,20 +55,20 @@ Package: amsbsy 1999/11/29 v1.2d
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count87
-LaTeX Info: Redefining \frac on input line 211.
+LaTeX Info: Redefining \frac on input line 210.
 \uproot@=\count88
 \leftroot@=\count89
-LaTeX Info: Redefining \overline on input line 307.
+LaTeX Info: Redefining \overline on input line 306.
 \classnum@=\count90
 \DOTSCASE@=\count91
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count92
 \c@MaxMatrixCols=\count93
 \dotsspace@=\muskip10
@@ -89,18 +89,18 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks18
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2009/06/22 v3.00
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -593,7 +593,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box42
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/csvsimple/csvsimple.sty
-Package: csvsimple 2012/03/12 version 1.05 LaTeX CSV file processing
+Package: csvsimple 2012/11/08 version 1.06 LaTeX CSV file processing
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
@@ -604,7 +604,7 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \c@csvcol=\count136
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/gnuplottex/gnuplottex.sty
-Package: gnuplottex 2011/09/12 v0.4.4 gnuplot graphs in LaTeX
+Package: gnuplottex 2012/10/02 v0.4.5 gnuplot graphs in LaTeX
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
@@ -626,9 +626,9 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \listing@line=\count139
 )
 \verbatim@out=\write4
-runsystem(touch /tmp/w18-test-201341362)...disabled (restricted).
+runsystem(touch /tmp/w18-test-201344897)...disabled (restricted).
 
-runsystem(rm -f /tmp/w18-test-201341362)...disabled (restricted).
+runsystem(rm -f /tmp/w18-test-201344897)...disabled (restricted).
 
 
 
@@ -637,17 +637,17 @@ Package gnuplottex Warning: Shell escape not enabled.
 
 \c@fignum=\count140
 ) (/usr/local/texlive/2012/texmf-dist/tex/latex/todonotes/todonotes.sty
-Package: todonotes 2011/10/22 .dtx Todonotes source and documentation.
-Package: todonotes 2011/10/22
+Package: todonotes 2012/07/25 .dtx Todonotes source and documentation.
+Package: todonotes 2012/07/25
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
 
 (/usr/local/texlive/2012/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 \XKV@toks=\toks41
 \XKV@tempa@toks=\toks42
 \XKV@depth=\count141
-File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
 ))
 (/usr/local/texlive/2012/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarypositioning.code.tex
@@ -722,6 +722,9 @@ File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
+(/usr/local/texlive/2012/texmf-dist/tex/latex/bbding/bbding.sty
+Package: bbding 1999/04/15 v1.01 Dingbats symbols
+)
 (/usr/local/texlive/2012/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2008/07/08 v3.8m The Babel package
 
@@ -738,7 +741,7 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 \l@newzealand = a dialect from \language\l@british 
 ))
 (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
 (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
@@ -782,6 +785,9 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
@@ -790,39 +796,40 @@ Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 \Hy@pagecounter=\count164
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count165
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4062.
-Package hyperref Info: Link nesting OFF on input line 4067.
-Package hyperref Info: Hyper index ON on input line 4070.
-Package hyperref Info: Plain pages OFF on input line 4077.
-Package hyperref Info: Backreferencing OFF on input line 4082.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4300.
+Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count166
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4653.
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen188
 \Fld@menulength=\count167
-\Field@Width=\dimen188
-\Fld@charsize=\dimen189
-Package hyperref Info: Hyper figures OFF on input line 5773.
-Package hyperref Info: Link nesting OFF on input line 5778.
-Package hyperref Info: Hyper index ON on input line 5781.
-Package hyperref Info: backreferencing OFF on input line 5788.
-Package hyperref Info: Link coloring OFF on input line 5793.
-Package hyperref Info: Link coloring with OCG OFF on input line 5798.
-Package hyperref Info: PDF/A mode OFF on input line 5803.
-LaTeX Info: Redefining \ref on input line 5843.
-LaTeX Info: Redefining \pageref on input line 5847.
+\Field@Width=\dimen189
+\Fld@charsize=\dimen190
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
 \Hy@abspage=\count168
 \c@Item=\count169
 \c@Hfootnote=\count170
@@ -831,7 +838,7 @@ LaTeX Info: Redefining \pageref on input line 5847.
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2012/05/13 v6.82q Hyperref driver for pdfTeX
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count171
 \c@bookmark@seq@number=\count172
 
@@ -843,21 +850,19 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip51
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/cleveref/cleveref.sty
-Package: cleveref 2012/03/07{} v0.18.5{} Intelligent cross-referencing
-Package cleveref Info: `hyperref' support loaded on input line 2166.
-LaTeX Info: Redefining \cref on input line 2166.
-LaTeX Info: Redefining \Cref on input line 2166.
-LaTeX Info: Redefining \crefrange on input line 2166.
-LaTeX Info: Redefining \Crefrange on input line 2166.
-LaTeX Info: Redefining \cpageref on input line 2166.
-LaTeX Info: Redefining \Cpageref on input line 2166.
-LaTeX Info: Redefining \cpagerefrange on input line 2166.
-LaTeX Info: Redefining \Cpagerefrange on input line 2166.
-LaTeX Info: Redefining \labelcref on input line 2166.
-LaTeX Info: Redefining \labelcpageref on input line 2166.
-Package cleveref Info: `listings' support loaded on input line 2854.
-Package cleveref Info: loaded `english' language definitions on input line 6907
-.
+Package: cleveref 2013/03/22 v0.18.9 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2163.
+LaTeX Info: Redefining \cref on input line 2163.
+LaTeX Info: Redefining \Cref on input line 2163.
+LaTeX Info: Redefining \crefrange on input line 2163.
+LaTeX Info: Redefining \Crefrange on input line 2163.
+LaTeX Info: Redefining \cpageref on input line 2163.
+LaTeX Info: Redefining \Cpageref on input line 2163.
+LaTeX Info: Redefining \cpagerefrange on input line 2163.
+LaTeX Info: Redefining \Cpagerefrange on input line 2163.
+LaTeX Info: Redefining \labelcref on input line 2163.
+LaTeX Info: Redefining \labelcpageref on input line 2163.
+Package cleveref Info: `listings' support loaded on input line 2857.
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
@@ -869,28 +874,28 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 
 (./Pendulum.aux
 
-LaTeX Warning: Label `fig:probe' multiply defined.
+LaTeX Warning: Label `fig:acc' multiply defined.
 
 
-LaTeX Warning: Label `fig:probe@cref' multiply defined.
+LaTeX Warning: Label `fig:acc@cref' multiply defined.
 
 )
 \openout1 = `Pendulum.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -929,13 +934,13 @@ LaTeX Font Info:    ... okay on input line 83.
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count173
-\scratchdimen=\dimen190
+\scratchdimen=\dimen191
 \scratchbox=\box45
 \nofMPsegments=\count174
 \nofMParguments=\count175
 \everyMPshowfont=\toks45
 \MPscratchCnt=\count176
-\MPscratchDim=\dimen191
+\MPscratchDim=\dimen192
 \MPnumerator=\count177
 \makeMPintoPDFobject=\count178
 \everyMPtoPDFconversion=\toks46
@@ -960,34 +965,34 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.7}).
 
 \c@lstlisting=\count179
 \AtBeginShipoutBox=\box46
-Package hyperref Info: Link coloring OFF on input line 83.
+Package hyperref Info: Link coloring OFF on input line 86.
 (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count180
 )
-LaTeX Info: Redefining \ref on input line 83.
-LaTeX Info: Redefining \pageref on input line 83.
-LaTeX Info: Redefining \nameref on input line 83.
+LaTeX Info: Redefining \ref on input line 86.
+LaTeX Info: Redefining \pageref on input line 86.
+LaTeX Info: Redefining \nameref on input line 86.
 
 (./Pendulum.out) (./Pendulum.out)
 \@outlinefile=\write5
 \openout5 = `Pendulum.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 85.
+LaTeX Font Info:    Try loading font information for U+msa on input line 88.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 85.
+LaTeX Font Info:    Try loading font information for U+msb on input line 88.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 85.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 88.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -1003,48 +1008,124 @@ ulum.toc)
 
 ]
 
-LaTeX Warning: Reference `eq:delta' on page 1 undefined on input line 157.
+LaTeX Warning: Reference `eq:deltaS' on page 1 undefined on input line 150.
 
-
-LaTeX Warning: Reference `eq:deltafin' on page 1 undefined on input line 157.
+<images/schematic.png, id=56, 618.31pt x 373.395pt>
+File: images/schematic.png Graphic file (type png)
+ <use images/schematic.png>
+Package pdftex.def Info: images/schematic.png used on input line 167.
+(pdftex.def)             Requested size: 309.15424pt x 186.69704pt.
 
 [3
 
-] <images/schematic.png, id=113, 618.31pt x 373.395pt>
-File: images/schematic.png Graphic file (type png)
+] [4 <./images/schematic.png (PNG copy)>]
+./Pendulum.tex:205: Missing $ inserted.
+<inserted text> 
+                $
+l.205 
+      
+? 
+./Pendulum.tex:205: Display math should end with $$.
+<to be read again> 
+                   \par 
+l.205 
+      
+? 
 
-<use images/schematic.png>
-Package pdftex.def Info: images/schematic.png used on input line 180.
-(pdftex.def)             Requested size: 426.80418pt x 284.54092pt.
- [4 <./images/schematic.png (PNG copy)>]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 212.
+./Pendulum.tex:206: LaTeX Error: Bad math environment delimiter.
 
-<images/map.png, id=124, 499.8675pt x 765.86125pt>
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206 \end{equation}
+                    
+? 
+./Pendulum.tex:206: You can't use `\eqno' in vertical mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.206 \end{equation}
+                    
+? 
+./Pendulum.tex:206: Missing $ inserted.
+<inserted text> 
+                $
+l.206 \end{equation}
+                    
+? 
+./Pendulum.tex:206: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.206 \end{equation}
+                    
+? 
+[5] <images/map.png, id=105, 499.8675pt x 765.86125pt>
 File: images/map.png Graphic file (type png)
  <use images/map.png>
-Package pdftex.def Info: images/map.png used on input line 228.
+Package pdftex.def Info: images/map.png used on input line 247.
 (pdftex.def)             Requested size: 227.62312pt x 312.97676pt.
 
-[5]
+./Pendulum.tex:271: Extra }, or forgotten $.
+l.271 G=\frac{b^2 a_{o}}{2 m_{2}}\rm \ m}
+                                         ^3 {\rm kg}^{-1} {\rm s}^{-2}
+? 
+[6 <./images/map.png (PNG copy)>]
 
-LaTeX Warning: Reference `eq:errort' on page 1 undefined on input line 272.
+LaTeX Warning: Reference `eq:errort' on page 1 undefined on input line 281.
 
-[6 <./images/map.png (PNG copy)>] (./Pendulum.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 4--7
+./Pendulum.tex:321: Missing } inserted.
+<inserted text> 
+                }
+l.321 ...g the digital calliper and $\Delta{l_{o}$
+                                                   was the 0.1mm error in th...
+
+? 
+<graphs/mainresult.pdf, id=116, 239.56502pt x 192.37068pt>
+File: graphs/mainresult.pdf Graphic file (type pdf)
+
+<use graphs/mainresult.pdf>
+Package pdftex.def Info: graphs/mainresult.pdf used on input line 330.
+(pdftex.def)             Requested size: 479.12885pt x 384.74042pt.
+ [7]
+<graphs/linearB.pdf, id=125, 228.9343pt x 196.29637pt>
+File: graphs/linearB.pdf Graphic file (type pdf)
+
+<use graphs/linearB.pdf>
+Package pdftex.def Info: graphs/linearB.pdf used on input line 339.
+(pdftex.def)             Requested size: 457.86746pt x 392.59177pt.
+ [8 <./graphs/mainresult.pdf>]
+<graphs/linearA.pdf, id=147, 228.93129pt x 193.01811pt>
+File: graphs/linearA.pdf Graphic file (type pdf)
+
+<use graphs/linearA.pdf>
+Package pdftex.def Info: graphs/linearA.pdf used on input line 348.
+(pdftex.def)             Requested size: 457.86142pt x 386.03525pt.
+ [9 <./graphs/linearB.pdf>]
+
+LaTeX Warning: Reference `schematic' on page 1 undefined on input line 355.
+
+
+Overfull \hbox (21.15106pt too wide) in paragraph at lines 365--366
+\OT1/cmr/m/n/12 Determination by the anal-y-sis of the ac-cel-er-a-tion of the 
+pen-du-lum yielded the re-sult $7\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1(4) \OMS/cm
+sy/m/n/12 ^^B [][][][][]\OT1/cmr/m/n/12 s[]$.
+ []
+
+[10 <./graphs/linearA.pdf>] (./Pendulum.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 34--37
 []\OT1/cmr/m/n/12 Magdalen Berns.  \OT1/cmr/m/it/12 Java pro-gram for Data Anal
 -y-sis\OT1/cmr/m/n/12 , 2013.  [avail-able
  []
 
-) [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 360.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 360.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 376.
+ [11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 376.
  (./Pendulum.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 360.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 360.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 376.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 376.
 Package rerunfilecheck Info: File `Pendulum.out' has not changed.
-(rerunfilecheck)             Checksum: 65F257014D039D6D678A8C3155A9CC37;882.
+(rerunfilecheck)             Checksum: 3902D598A73D686526FA655CAE16CCD0;203.
 
 
 LaTeX Warning: There were undefined references.
@@ -1054,30 +1135,33 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 26620 strings out of 493488
- 565072 string characters out of 3141326
- 760606 words of memory out of 3000000
- 29381 multiletter control sequences out of 15000+200000
- 14615 words of font info for 59 fonts, out of 3000000 for 9000
+ 26836 strings out of 493481
+ 567991 string characters out of 3140966
+ 717286 words of memory out of 3000000
+ 29583 multiletter control sequences out of 15000+200000
+ 15662 words of font info for 64 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,11n,74p,858b,693s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,11n,74p,894b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
-l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/
-texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
-live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
-e/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Pendulum.pdf (8 pages, 255004 bytes).
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
+/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
+/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/t
+exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
+ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
+12/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
+2/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2012/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Pendulum.pdf (11 pages, 360840 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 185 compressed objects within 2 object streams
- 44 named destinations out of 1000 (max. 500000)
- 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 250 PDF objects out of 1000 (max. 8388607)
+ 211 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 70 words of extra memory for PDF output out of 10000 (max. 10000000)
 
