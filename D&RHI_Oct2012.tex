@@ -1,0 +1,204 @@
+\documentclass[a4paper,11pt]{scrartcl}
+\usepackage{amsmath} 
+\usepackage[utf8]{inputenc}
+
+\title{Dynamics and Relativity Hand In: 1}
+\date{11/10/2012}
+\author{4693647}
+
+\pdfinfo{%
+  /Title    (Dynamics and Relativity Hand In 1)
+  /Author   (Anon)
+}
+
+\begin{document}
+\maketitle Dynamics and Relativity Hand In 1
+The initial position vector of the free particle is $\underline{\mathbf{r}}(0)=x_{0}\hat{\mathbf{i}} + y_0\hat{\mathbf{j}}$ and its initial velocity is 
+$\dot{\underline{\mathbf{r}}}(0)=v_x\hat{\mathbf{i}} + v_{y}\hat{\mathbf{j}}$.
+
+\subparagraph{a) Frame of S:}
+
+The particle is free and therefore it has no forces acting upon it: 
+
+ 
+\begin{equation}
+\ddot{\underline{\mathbf{r}}} = \frac{d{^2}\underline{\mathbf{r}}}{dt^2}= 0
+\end{equation}
+
+\begin{equation}
+\int{\ddot{\underline{\mathbf{r} } }}dt=\dot{\underline{\mathbf{r}}}+\underline{\mathbf{\alpha} }
+\end{equation}
+
+\begin{equation}
+\int{ (\dot{\underline{\mathbf{r}}}+\underline{\mathbf{\alpha}})dt}=\underline{\mathbf{\alpha}}t+\underline{\mathbf{\beta}}	
+\end{equation}
+
+\begin{equation}	
+\int{ (\dot{\underline{\mathbf{r}}}+\underline{\mathbf{\alpha}})dt}=\underline{\mathbf{\alpha}}t+\underline{\mathbf{\beta}}
+\end{equation}
+
+So the particle at time t, is found to be:
+
+
+\begin{equation}
+\underline{\mathbf{r}}=\underline{\mathbf{\alpha}}t+\underline{\mathbf{\beta}}
+\end{equation}
+
+
+Where $\underline{\mathbf{\alpha}}$ and $\underline{\mathbf{\beta}}$ are constant vectors.
+
+\begin{equation}
+\underline{\mathbf{\beta}}=x_0\hat{\mathbf{i}}+y_0\hat{\mathbf{j}}	
+\end{equation}
+
+
+
+\begin{equation}
+\underline{\mathbf{\alpha}}=v_x\hat{\mathbf{i}}+v_y\hat{\mathbf{j}}	
+\end{equation}
+
+Therefore vector $\underline{\mathbf{r}}$ can be represented as:
+
+\begin{equation}
+\underline{\mathbf{r}}=(v_xt+x_0)\hat{\mathbf{i}}+\left(v_yt+y_0\right)\hat{\mathbf{j}}
+\end{equation}
+
+Which is what we would expect for a free particle. 
+
+\subparagraph{b) Frame of S':}
+
+
+The $S'$ frame rotates about the $z$ axis at angular velocity $\omega$ 
+
+The $S'$ frame basis vectors are expressed as 
+
+ 
+\begin{equation}
+\hat{\mathbf{i'}} = \cos{\omega}t\hat{\mathbf{i}}+\sin{\omega}t\hat{\mathbf{j}}
+\end{equation}
+
+\begin{equation}
+\hat{\mathbf{j'}} = -\sin{\omega}t\hat{\mathbf{i}}+\cos{\omega}t\hat{\mathbf{j}}
+\end{equation}
+
+Rearranging to get:
+
+\begin{equation}
+\hat{\mathbf{i}} =\frac{\hat{\mathbf{i'}}-\sin{\omega}t\hat{\mathbf{j}}}{ \cos{\omega}t}
+\end{equation}
+
+\begin{equation}
+\hat{\mathbf{j'}} = -\sin{\omega}t\left(\frac{\hat{\mathbf{i'}}-\sin{\omega}t\hat{\mathbf{\mathbf{j}}}}{ \cos{\omega}t}\right)+\cos{\omega}t\hat{\mathbf{j}}
+\end{equation}
+
+\begin{equation}
+\hat{\mathbf{j'}} = -\frac{ \sin{\omega}t }{\cos{\omega}t}\hat{\mathbf{i'}}+\left(\frac{sin^2{\omega}t}{\cos{\omega}t}+cos{\omega}t\right)\hat{\mathbf{j}}
+\end{equation}
+
+\begin{equation}
+=>\hat{\mathbf{j'}} +\frac{ \sin{\omega}t }{\cos{\omega}t}\hat{\mathbf{i'}}=\left(\frac{sin^2{\omega}t+\cos^2{\omega}t}{\cos{\omega}t}\right)\hat{\mathbf{j}}
+\end{equation}
+
+\begin{equation}
+\hat{\mathbf{j'}} +\frac{ \sin{\omega}t}{\cos{\omega}t}\hat{\mathbf{i'}}=\left(\frac{1}{\cos{\omega}t}\right)\hat{\mathbf{j}}
+\end{equation}
+
+\begin{equation}
+=>\hat{\mathbf{j}}=\cos{\omega}t\left(\hat{\mathbf{j'}} +\frac{\sin{\omega}t }{\cos{\omega}t}\hat{\mathbf{i'}}\right)
+\end{equation}
+
+\begin{equation}
+\hat{\mathbf{j}}=\sin{\omega}t\hat{\mathbf{i'}} +\cos{\omega}t\hat{\mathbf{j'}} 
+\end{equation}
+
+Putting 17 into 11 yields: 
+
+\begin{equation}
+\hat{\mathbf{i}} =\frac{(1-\sin^2{\omega}t)\hat{\mathbf{i'}} -\sin{\omega}t\cos{\omega}t\hat{\mathbf{j'}} }{ \cos{\omega}t}
+\end{equation}
+
+\begin{equation}
+\hat{\mathbf{i}} =\frac{(\cos^2{\omega}t)\hat{\mathbf{i'}} -\sin{\omega}t\cos{\omega}t\hat{\mathbf{j'}} }{ \cos{\omega}t}
+\end{equation}
+
+\begin{equation}
+\hat{\mathbf{i}} =\cos{\omega}t\hat{\mathbf{i'}} -\sin{\omega}t\hat{\mathbf{j'}} 
+\end{equation}
+
+Equations 20 and 17 for $\hat{\mathbf{i}}$ and $\hat{\mathbf{j}}$ can be substituted into 8 respectively:
+
+\begin{equation}
+\underline{\mathbf{r'}}=(v_xt+x_0)(\cos{\omega}t\hat{\mathbf{i'}} - \sin{\omega}t\hat{\mathbf{j'}}) +\left(v_yt+y_0\right)(\sin{\omega}t\hat{\mathbf{i'}} +\cos{\omega}t\hat{\mathbf{j'}} )
+\end{equation}
+
+\begin{equation}
+\underline{\mathbf{r'}}=((v_xt+x_0)\cos{\omega}t+\left(v_yt+y_0\right)\sin{\omega}t)\hat{\mathbf{i'}} + (-(v_xt+x_0)\sin{\omega}t +\left(v_yt+y_0\right)\cos{\omega}t)\hat{\mathbf{j'}} 
+\end{equation}
+
+Which is the expected result. 
+
+\subparagraph{c) Frame of S', for Case I:}
+\subparagraph{i)} 
+Expression for the displacement of the particle from the perspective of the rotating reference frame: 
+\begin{equation}
+ \underline{\mathbf{r}}'=vt(\cos{\omega}t)\hat{\mathbf{i'}}-vt(\sin{\omega}t)\hat{\mathbf{j'}}
+\end{equation}
+\subparagraph{ii)} 
+Expressions for the velocity and the acceleration of the particle from the perspective of the rotating reference frame: 
+\begin{equation}
+ \dot{\underline{\mathbf{r}}}'=v((\cos{\omega}t-{\omega}t\sin{\omega}t)\hat{\mathbf{i'}}-(\sin{\omega}t+{\omega}t\cos{\omega}t))\hat{\mathbf{j'}}
+\end{equation}
+\begin{equation}
+ \ddot{\underline{\mathbf{r}}}'=v(({\omega}^2t\cos{\omega}t-2\sin{\omega}t)\hat{\mathbf{i'}}+({\omega}^2t\sin{\omega}t-2{\omega}\cos{\omega}t)\hat{\mathbf{j'}}
+\end{equation}
+\subparagraph{iii)}
+A Taylor expansion to the first 3 terms for ${\omega}t\approx0$ can be expressed using the calculated terms:
+ \begin{equation}
+ \underline{\mathbf{r}}'(0)=0
+\end{equation}
+\begin{equation}
+ \dot{\underline{\mathbf{r}}}'(0)=v\hat{\mathbf{i'}}
+\end{equation}
+\begin{equation}
+ \ddot{\underline{\mathbf{r}}}'(0)=-2v{\omega}\hat{\mathbf{j'}}
+\end{equation}
+
+\begin{equation}
+ \underline{\mathbf{f}}(0)=\frac{v{\omega}t}{2}\hat{\mathbf{i'}}-\frac{v{\omega}^2t}{3}\hat{\mathbf{j'}}
+\end{equation}
+
+\subparagraph{c) Frame of S', for Case II:}
+\subparagraph{i)}
+Expressions for the displacement of the particle from the perspective of the rotating reference frame: 
+ \begin{equation}
+ \underline{\mathbf{r}}'=(-\ell{\omega}t{\cos{\omega}t}+\ell{sin{\omega}t})\hat{\mathbf{i'}}+(\ell{\omega}t{\sin{\omega}t}+\ell{cos{\omega}t})\hat{\mathbf{j'}}
+\end{equation}
+\subparagraph{ii)} 
+Expressions for the velocity and the acceleration of the particle from the perspective of the rotating reference frame:
+\begin{equation}
+\dot{\underline{\mathbf{r}}}'=\ell{\omega}^2t\sin{\omega}t\hat{\mathbf{i'}}+\ell{\omega}^2t\cos{\omega}t\hat{\mathbf{j'}}
+\end{equation}
+\begin{equation}
+ \ddot{\underline{\mathbf{r}}}'=(\ell{\omega}^2\sin{\omega}t+\ell{\omega}^3\cos{\omega}t)\hat{\mathbf{i'}}+(\ell{\omega}^2\cos{\omega}t-\ell{\omega}^3\sin{\omega}t)\hat{\mathbf{j'}}
+\end{equation}
+\subparagraph{iii)}
+A Taylor expansion to the first 3 terms for ${\omega}t\approx0$ can be expressed using the calculated terms:
+
+\subparagraph{c) Frame of S', for Case III:}
+\subparagraph{i)}
+Expression for the displacement of the particle from the perspective of the rotating reference frame: 
+\begin{equation}
+ \underline{\mathbf{r}}'=(\ell{\cos{\omega}t})\hat{\mathbf{i'}}-(\ell{\sin{\omega}t})\hat{\mathbf{j'}}
+\end{equation}
+\subparagraph{ii)} 
+Expressions for the velocity and the acceleration of the particle from the perspective of the rotating reference frame:
+\begin{equation}
+ \dot{\underline{\mathbf{r}}'}=-(\omega{\ell{\sin{\omega}t}})\hat{\mathbf{i'}}+(\omega{\ell{\cos{\omega}t}})\hat{\mathbf{j'}}
+\end{equation}
+\begin{equation}
+ \ddot{\underline{\mathbf{r}}'}=-(\omega^2{\ell{\cos{\omega}t}})\hat{\mathbf{i'}}-(\omega^2{\ell{\sin{\omega}t}})\hat{\mathbf{j'}}
+\end{equation}
+\subparagraph{iii)}
+A Taylor expansion to the first 3 terms for ${\omega}t\approx0$ can be expressed using the calculated terms:
+
+\end{document}

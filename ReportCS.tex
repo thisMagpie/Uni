@@ -1,0 +1,99 @@
+\documentclass[]{report}   % list options between brackets
+\usepackage[pdftex]{graphicx}
+\usepackage{wrapfig}
+\DeclareGraphicsExtensions{.png}
+
+
+
+
+% type user-defined commands here
+
+\begin{document}
+
+
+
+\title{An investigation into the usefulness of the Chaos Game algorithm fo modelling the structure of the Y Chromosome }   % type title between braces
+\author{Magdalen Berns}         % type author(s) between braces
+\date{April 6, 2012}    % type date between braces
+\maketitle
+\chapter*{Introduction} 
+
+
+\section{Introduction}     % section 1.1
+\subsection{History}       % subsection 1.1.1
+
+\chapter*{Object Oriented Methodolgy and Design} 
+
+\section{Experiment 1}     % section 2.1
+Where possible repeated code was avoided.The classes were catagorised into their respective tasks and in doing this it was
+possible to design a Control.java class which had the bulk of the methods which needed to access the same coordinates:
+To initialise the square and triangle polygon.
+Check if a if a coordinate is inside the polygon
+Select a random vertex and place a point inside.
+
+ 
+\begin{equation}
+ r * (x_{i}-x)*x
+\end{equation}
+made use of the contains() method in the Polygon class. 
+ A lot of the code was dependent on coordinates so it was a difficult decision sometimes. 
+	The DNA  files where fairly big (HOW BIG?) I was keen to avoid making the 	program work harder than it need to by using additional memory by instantiating variables in more classes than than necessary.
+	To this end I structured the code.
+	I used the polygon class from the awt package. This already had a lot of useful methods which helped with the project so I saw fit to use them. The main useful method on the package was “contains()” which returns true if a point is inside the polygon.
+	I made my own Control.java class which took care of all methods which heavily depended on coordinates. I hard coded the width and height dimension of the shape but for the individual coordinates of the shape I made them scalable.  
+	I made a random class 
+	File reader class
+	
+	For this reason I was a bit counter intuitive as I did not create a class each for the square and triangles. 
+	
+\subsection{Usage}         % subsection 2.1.1
+\chapter*{Results} 
+          % chapter 2
+\section{Experiment 1}     % section 2.1
+
+	The random selection of points using a square and triangle polygon was treated as a seperate process altogether from those of the file. 
+The reason for this was that it was preferable to have a single frame for both the triangle and square to compare their patterns using different angles.
+This meant a Control.java class could be used for common coordinates and methods to the random processess involved in experiment 1.
+Since the fraction for the dna file was a hard coded value of 0.5 and the data from the file would require exceptions to be thrown and a lengthy data storage process (SIZE OF File??) 
+it was necessary it avoided 
+o assess the behaviour of both the square and equalateral without too much user interaction. 
+ A lot of the code was dependent on coordinates so it was a difficult decision sometimes. 
+	The DNA  files where fairly big (HOW BIG?) I was keen to avoid making the 	program work harder than it need to by using additional memory by instantiating variables in more classes than than necessary.
+	To this end I structured the code.
+	I used the polygon class from the awt package. This already had a lot of useful methods which helped with the project so I saw fit to use them. The main useful method on the package was “contains()” which returns true if a point is inside the polygon.
+	I made my own Control.java class which took care of all methods which heavily depended on coordinates. I hard coded the width and height dimension of the shape but for the individual coordinates of the shape I made them scalable.  
+	I made a random class 
+	File reader class
+
+\begin{figure}[htb]
+\includegraphics{/Home/s0946936/Desktop/CSlast/half.png}
+\caption{(n=3,r=0.5) and (n=4, r=0.5) for equalateral triangle and square polygons using Chaos Game algorithm}
+\label{fig:Key result of Experiment 1 (r=0.5)}
+\end{figure}
+
+
+
+
+\begin{wrapfigure}{3.5in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% You will need to add \usepackage{wrapfig} to your preamble to use textwrapping %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \centering
+ \includegraphics[bb=0 0 587 257,keepaspectratio=true]{half.png}
+ % half.png: 783x343 pixel, 96dpi, 20.71x9.07 cm, bb=0 0 587 257
+ \caption{Key Resul; r=0.5}
+\end{wrapfigure}
+
+
+	
+	. 
+	
+\subsection{Usage}         % subsection 2.1.1
+
+
+
+\begin{thebibliography}{9}
+  % type bibliography here
+\end{thebibliography}
+
+\end{document}
