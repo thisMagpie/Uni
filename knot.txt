@@ -1,0 +1,5 @@
+Author: Magdalen Berns
+
+A connection between free ends of a piece of cable (or string) which has been fixed together fast, forming a closed curve in three dimensional space, is a called a knot. The closed curve formed within the space of a knot, uniquely identifies the knot only when no part of the curve is intersected by itself. Without these defining characteristics, a knot does not exist.
+
+Knot theory is the analysis of what structure is found within the topological space over which any particular knot creates its encapsulated circuit. The main feature of Knot Theory is that the knot itself is considered to be a singular, self contained construct, with N number of quantifiable paths.
