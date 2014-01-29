@@ -11,7 +11,6 @@
 \Crefname{figure}{Figure}{Figures}
 \crefname{equation}{equation}{equations}
 \Crefname{Equation}{Equation}{Equation}
-\crefname{section}{section}{section}
 
 \title{A Review of The Study of Microbes in Space}
 \author{Andrew Coop, Edvinas Pakanavičius, Emma Ryan, Freddy Tanner, Magdalen Berns}
@@ -34,7 +33,173 @@
 
 \section{Introduction}
 \section{A1}
-\section{B}
+
+\section{Microbial Fuel Cells}
+There has been much discussion, ranging from wild speculation to serious scientific debate about the prospect of human survival and prosperity in environments beyond our own earth. Here, I will review some of the factors that will prove crucial to the success of future exploration and survival, in particular: the use of Microbial Fuel Cells (MFCs) as a source of both electrical energy and clean water, using wastewater as a source of energy, and creating a self-contained ecosystem capable of supporting life. 
+
+A MFC is a device that converts chemical energy stored in the bonds of organic compounds to electrical energy via catalytic reactions by microorganisms. In a typical MFC, there is an anaerobic (free from the presence of oxygen) anodic (negative electrode) chamber and an aerobic cathodic (positive electrode) chamber between which exists a proton exchange membrane (PEM) and an external wire with a load resistor. The microbes are grown under the anaerobic conditions in the anodic chamber with the addition of an organic substrate as fuel.  The fuel is oxidised by the microbes in the anodic chamber during an Extracellular Electron Transfer (EET) process that generates protons and electrons, in addition to a by-product of carbon dioxide, and then reduced at the cathode, combining protons, electrons and oxygen to form water. \cite{du2007state,logan2006microbial}
+
+%\begin{figure}
+%\centering
+%\includegraphics{images/1MFC.png}
+%\caption{A diagram of a two-chamber Microbial Fuel Cell \cite{du2007state}}%\label{fig:1MFC}
+%\end{figure}
+
+Inside the anodic chamber, there are three ways in which electrons can be transferred to the anode following the oxidisation of the organic matter: by respiratory enzymes that are usually bound to the inner cell membrane such as electrochemically active cytochromes found among Geobacteraceae, by a mediator such as potassium ferric cyanide that acts as an artificial electron carrier, or by using bacteria that produce their own mediators such as Shewanella putrefaciens that produce soluble quinones.\cite{ghangrekar2006wastewater} \cite{min2004continuous}
+
+The absence of oxygen in the anodic chamber ensures that the only acceptor of the electrons is the cathodic chamber, and thus the electrons are transported between the electrodes along the external wire, creating an electrical current. The protons pass through the proton conducting PEM to the aerobic cathodic chamber where they combine with the oxygen and electrons to form water. The key to the process is utilising the oxidation of the organic matter by the bacteria, and the reduction process through which the electrons are acquired by the oxygen molecules in the cathodic chamber. The result is the production of water, carbon dioxide and electricity. This process of oxidisation here is similar to that found in existing water treatment processes; however, bacteria that can transfer electrons to the surface of an electrode replace methanogens resulting in a process that is more environmentally healthy.\cite{ghangrekar2006microbial} There are further benefits in the use of MFCs, which include carbon neutrality (the carbon dioxide released from the biomass was originally absorbed from the environment through photosynthesis, unlike the extra release from the burning of fossil fuels, the ease in which the fuel can be obtained and replenished and the relative simplicity of the system. Most notable however is that moreorless any organic material can be inputted as fuel.  \cite{liu2004production}
+
+It is clear then that this kind of technology has applications in space exploration. An energy source that uses unwanted human waste and produces pure water could potentially tackle two of the most pressing needs for human survival. There are already plans afoot to utilise MFCs for powering planetary robotics such as ?micro-rovers?. The US Naval Research Lab were able to produce an appliance weighing approximately 1kg with its electronics and controls powered by some of the energy from the MFC, with surplus energy being diverted into a capacitor/battery until sufficient energy was stored to power a ?tumbling? locomotion system. In this instance, Geobacter sulfurreducens, an anaerobic, long-life bacterium was used. The advantage of this system is that it will continue to generate power, and recharge the on-board capacitors for a duration suitable for long exploration missions. \cite{society2012microbial}
+
+To better understand better MFCs can benefit human exploration missions, it is worthwhile considering how different configurations alter the power output, economy and practicality. Firstly, the use of a mediator to transfer electrons to the anode, substances that are suitable for this task include potassium ferric cyanide, neutral red, methyl viologen and thionine. While the high concentration of electron carriers can lead to higher power output, these substances can be expensive to source, and are often toxic and harmful to microorganisms.\cite{logan2006microbial} Therefore, when seeking long-term, self-sustaining power supply, it is more practical to utilise bacteria that use respiratory enzymes, or produce their own mediators.  \cite{min2004continuous} \cite{ghangrekar2006microbial}
+
+There is also evidence that a mixed culture of microorganisms (even those that cannot transfer electrons to the anode directly) can lead to a six-fold increase in the current output, however I will not consider the exact composition of bacteria required here.\cite{ghangrekar2006microbial}
+
+Another consideration of the system configuration is the material used for the PEM. The requirements are that protons are able to diffuse, while the oxygen, bacteria and fuel transfer between the two chambers is minimised. Oxygen entering the anodic chamber can have a large, negative effect on the coulombic efficiency (electrons collected/maximum possible collection) \cite{logan2006microbial}.  Designs as simple as porous ceramic plates and salt bridges have been used for this purpose in the laboratory \cite{min2005electricity}, although the very presence of a membrane presents an issue in the treatment of wastewater, as any such membrane would be subject to fouling, particularly with the presence of suspended solids and soluble contaminants. Monitoring the fuel cells for when this occurs and the associated maintenance cost of supplying and replacing the membrane presents another problem when seeking a system that requires long-term stability. 
+
+A solution to this problem could be to use a membrane-free cell. In this setup, wastewater flows through both the anaerobic and aerobic sections, with the protons conducted by the water. It has been shown that this method can still treat wastewater containing organic contaminants. A PEM is likely to be a better conductor of protons than water, however it may actually add to the overall internal resistance of the system. \cite{ghangrekar2006wastewater,logan2005simultaneous}
+
+\begin{figure}
+\centering
+\includegraphics{images/2membranelessmfc.png}
+\caption{\cite{ghangrekar2007performance}}
+\label{fig:2membranelessmfc}
+\end{figure}
+
+There is a significant reason why this method is the most applicable for use in space exploration; there is no mixing required other than the flow of liquid into the system, which can be achieved using a pump system. This is an integral factor for the functionality of the device in a micro-gravity environment, and it is unique to this particular setup. \cite{min2004continuous}
+
+With a configuration that could plausibly operate in extra-terrestrial conditions, it is necessary to consider ways of maximising the power output. Firstly, like in all systems, electricity will only be generated if it is thermodynamically favourable.  The maximum energy output can be calculated from the Gibbs free energy:
+
+$\Delta G = Delta G_0 + RT ln(II)$
+
+$G$ is the change in Gibbs free energy, $G_{0}$ is the Gibbs free energy under standard conditions (1 bar pressure, 298.15K), R is the universal gas constant, T is the temperature and II is a unitless reaction quotient. The simplicity of MFC design allows the electromotive force to be calculated from the potential difference between the two electrodes (electromotive force of the system): 
+
+\begin{equation}
+W=Q E_emf = -G
+\end{equation}
+
+
+Q = Ne, the number of electrons transferred to the anode, multiplied by the charge of an electron. The two equations can be combined to give the EMF in terms of the Gibbs free energy:
+
+\begin{equation}
+E_emf = - G_0 / Q
+\end{equation}
+
+And at standard conditions, we take the reaction quotient II to equal 1, obtaining a standard cell emf:
+
+\begin{equation}
+E^{0}_{emf} = - \frac{G_0}{ Q}
+\end{equation}
+
+
+The reaction can now be expressed in terms of potentials:
+
+\begin{equation}
+E_emf = E^{0}_{emf} - RT/Q ln (II)
+\end{equation}
+
+
+This calculated EMF here provides the theoretical upper limit for the voltage and thus the current and power. The actual values of potential at the electrodes can be analysed in terms of the reactions occuring. An example anodic reaction would be the oxidisation of acetate that is represented by:
+
+\begin{equation}
+2HCO_{3}^{-} + 9H^{+} + 8e^{-} -> CH_{3}COO^{-} + 4H_{2}O
+\end{equation}
+
+
+The potentials can then be compared to the normal hydrogen electrode that has zero potential under the standard conditions stated above. The actual potential can then be deduced by assuming the activities of different species is equal to their concentration, so in this case where the reaction is acetate oxidation:
+
+\begin{equation}
+E_{An} = E_{An}^{0}  - RT / 8F ln ([CH_{3}COO^{-}]/[HCO_{3}^{-}]^{2} [H^{+}]^{9{}})
+\end{equation}
+
+F is Faraday's constant.
+
+And at the cathode, where oxygen accepts the electrons in the reduction process:
+
+\begin{equation}
+O_{2} + 4H^{+} + 4e^{-} -> 2 H_{2} O
+\end{equation}
+
+
+\begin{equation}
+(E_{Cat} = E_{Cat} ^ {0} - RT/4F ln(1/ p O_{2} [H^{+}]^{4}
+\end{equation}
+
+
+The pH of the cathode solution can affect the overall cathode potential, but the cell emf can now be expressed in terms of the two potentials.\cite{logan2006microbial}
+
+\begin{equation}
+E_{emf} = E_{Cat} - E_{An}
+\end{equation}
+ 
+Of course, there are many other factors that reduce the output from the theoretical limit, such as: resistance in the cell and wires (ohmic losses), energy lossed during the oxidisation and reduction processes (activation losses), energy gained by the bacteria transporting electrons across a potential difference to the anode (bacterial metabolic losses) and loss through mass transfer at high current densities (concentration losses).\cite{logan2006microbial}
+
+Concentration losses are a particularly concern when assessing the plausibility of power generation in space. With a high oxidisation rate, a large number of electrons diffuse towards the electrode but this process of mass transfer can be slow and limited. This can lead to a limit in both the discharge of the oxidised species from the anode and collection of reduced species at the cathode. This can cause an increase in the anode potential or a drop in the cathode potential, and reduce the overall output of the system. This scenario is likely to be more prominent in a poorly mixed system, as is expected in a micro-gravity environment, where diffusional gradients may inhibit transportation and increase concentration losses. The further use of pumps could increase the amount of mixing, but it is important to ensure that the power output exceeds the amount that the pump consumes. Similarly, the use of the centrifugal force as an artificial source of gravity may circumvent this problem. Other innovative methods of achieving mixing in micro-gravity are discussed later in this report. 
+
+It is noteworthy that the maximum theoretical value of potential has dependence on temperature. This is due to both thermodynamic limits, and the activity of microbes in different and varying environments. Assuming that the system is set up to ensure that the reaction will always be thermodynamically favourable, the effects of temperature on the microbes has a more significant effect on the overall performance of the system. L.H. Li et al \cite{li2013effect} discovered that electricity generation from a MFC fuelled by sludge from a river occurred between 283-316K, with no activity recorded outwith these values. This affect can be attributed to both the decrease in microbial activity, but also an increase in the total internal resistance. The highest power output was achieved with the device operating at 306K, suggesting that successful operation of an MFC may require a controlled environment to ensure sustainable power output.
+
+\begin{figure}[ht]
+\centering
+\includegraphics{images/3effectoftemperature.png}
+\caption[\cite{li2013effect}]{A graph showing the effect of temperature on internal resistance and power density. The variables were found to be closely related, with optimal performance occuring at around 37 degrees celsius.}
+\label{fig:3effectoftemperature}
+\end{figure}
+
+Using the thermodynamical approach described previously, Logan et al \cite{logan2006microbial} reported a theoretical maximum potential difference of 1.1V. This reflects ideal performance, but is not a particularly reliable figure due to the complex respiratory chain through which the oxidisation process occurs, a process that varies from microbe to microbe and depends on the external conditions. The actual obtainable value is more likely to be between 0.5-0.8V, similar to that of a hydrogen fuel cell.\cite{du2007state,logan2005simultaneous}
+
+If the potential difference between the two electrodes is known, it is simple to calculate the power of the system using Ohm?s Law:
+
+$P = E_{emf} ^{2} / R_{ext}$
+
+Where $R_{ext}$ is the external resistance, usually in the form of a load resistor. A calculation more indicative of the performance is that of the power density, the power output per unit anode surface area.
+
+$P = E_{emf} ^{2} / R_{ext} A_(An)$
+
+A measurement of the power by a mediator-less MFC, continuously fed wastewater as fuel yielded a steady power output of 6.73mW/m2 \cite{ghangrekar2006microbial}, but elsewhere an isolated maximum value of 1.5W/m2 has been reported \cite{logan2008microbial}. There is a large disrepency in the figures reported, however taking into account the extra concentration losses expected in a micro-gravity environment, the power output achievable at a sustained level at present would only be sufficient for low powered appliances, or for charging capacitors for long periods to enable short periods of high-powered discharge. Connecting a number of MFC devices in a series could increase the output, although it is unlikely that MFCs alone would provide a single, sustainable source of electrical energy.
+
+While more research needs to be carried out to find the ideal system design to maximise power density and output, it is worth examining the merits of this system as an appliance for wastewater treatment alone. The treatment of wastewater involves the removal of organic matter in the form of Chemical Oxygen Demand (COD) and Biochemical Oxygen Demand (BOD). COD is a measure of the organic matter (that cannot be oxidised biologically) present in water, measured in mg/L. It is a good indicator of water quality. BOD is the amount of dissolved oxygen needed by aerobic biological organisms to break down organic matter in water. \cite{surez2005determination} 
+
+Existing methods of wastewater treatment require large amounts of energy and economic expense In many existing processes, energy is recovered as methane, but it is not very useful, and often flared \cite{ghangrekar2006wastewater,chang2005improvement}. COD removal efficiency is the most common measure for water treatment efficiency. Using the membrane-less device described earlier, operating over a period of 78 days, [ghangrekar et al] observed a steady increase in both the removal efficiency over time before reaching a maximum value of 90.86% with 50? applied external resistance:
+
+\begin{figure}[ht]
+\centering
+\includegraphics{images/4CODremoval}
+\caption[\cite{ghangrekar2006wastewater} A table displaying BOD and COD removal under varying conditions]{}
+\label{fig:4CODremoval}
+\end{figure}
+
+As a useful comparison, a study of the COD and BOD removal efficiency of two urban waterwater treatment plants in Bangalore, India revealed BOD removal efficiency of 94.98\% and 97.60\% respectively, and COD removal efficiency of 76.26\% and 91.60\% respectively \cite{pravikumar2010assessment}. Already, the results from the membrane-less MFC are comparable to existing water treatment data. There is further evidence that MFCs have the potential for widespread use in wastewater treatment \cite{fornero2010electric}, and with further refinement, particularly in finding a diverse, mixed-culture of microbes capable of oxidising a wide variety of organic material and suitable scaling up of the MFC design to handle large volumes of continuously inputted wastewater, there is scope for the use of these devices on future exploration missions. Having shown that the devices are suitable for wastewater treatment alone, the additional electricity generation capabilities can relieve the total energy demand by contributing energy to battery/capacitor powered devices. The underlying simplicity and regenerative nature of the device leaves the door open for further development and modifications to perhaps increase the power density in future.
+
+\section{MELiSSA}
+
+While much of the discussion so far has considered future uses and adaptations of existing technology for use in micro-gravity environments, there are some microbiological technologies already in development for this very purpose. A prime example of a project championing such progress is MELiSSA (Micro-Ecological Life Support System Alternative), a project led by the European Space Agency (ESA) that combines a vast number of research departments, corporations and technologies from around Europe aiming to develop a sustainable, regenerative life supporting ecosystem system that could prolong survival capabilities on lunar exploration missions, or further missions to Mars and beyond. \cite{agency2008melissa} 
+
+ESA estimate that a mission to Mars would require 30 tonnes of supplies. This, clearly, is unattainable. As such, MELiSSA aims to develop an eco-system that is entirely self-sustaining with efficiency as close to 100\% as possible, recovering water, carbon dioxide and food from human waste, carbon dioxide and minerals. The project aims to support a human crew by 2020-2025. An important component to the project is the recognition that human waste may become one of the most valuable resources in the success of human space exploration. One example of a technology that has been developed successfully is known as Biostyr (Veolia Water Solutions and Technologies \cite{veolia}); like an MFC, it is a technology that can treat wastewater and remove nitrogen and carbon content from water in one cell, using bacteria to oxidise the waste as fuel and recover clean water. While the technology was developed as part of project MELiSSA, it is already being used in the treatment of more than 100 billion cubic litres of water per day and could play a vital role as part of a self-sustaining ecosystem. Further testing of others such wastewater treatment is taking place at the ESA?s Concordia Station in Antarctica, one of the most inhospitable areas on earth that is inaccessible to supplies and communications for 9 months a year.  The Grey Water Treatment Unit used at the site recycles approximately 85\% of the facilities water. \cite{salem2009coldest}
+
+Another development being pursued as part of this project making use of microbes, is the development of an air revitalisation system based on the BIORAT experiment \cite{agency2000exemple}. There are two compartments to this system, one is the consumer compartment (CC), where an oxygen consuming organism is habited (humans, or for the purpose of this experiment, mice), the second compartment contains a photobioreactor (PBR) with a photosynthetic (carbon dioxide consuming and oxygen producing) organism, such as Spirulina platensis. The air is circulated with a pump, and is enriched with carbon dioxide in the CC due to the metabolic activity of the mice, this carbon dioxide is then consumed in the PBR and the air is enriched with oxygen again. The experiment intended to show that an artificial ecosystem can be created first under earth conditions, then under microgravity conditions on the International Space Station (ISS).The intention was to control the oxygen supply based on the demand and the activity of the mice by modifying the light intensity incident on the photoreactor. 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=1.2]{images/5photobioreactor}
+\caption[\cite{agency2000exemple} A diagram showing the basic functionality of the experiment.]{}
+\label{fig:5photobioreactor}
+\end{figure}
+
+The setup is extremely simple, with oxygen flowing from the PBR to the CC, being consumed by the mice and returned to the photobioreactor as carbon dioxide. The light intensity incident on the PBR determines the level of photosynthesis and thus the amount of oxygen produced. 
+The three most important variables for the sustainability of this system are the speed of recovery of oxygen from the photobioreactor, the removal of carbon dioxide from the consumer compartment and the software control of the light intensity. Further problems can arise through the coupling of pressure and air flow. The pressure in the CC needs to be maintained without inhibiting the inflow of oxygen or the outflow of carbon dioxide. Furthermore, air passing through the photoreactor can collect moisture and add unwanted condensation. It is important that these conditions are monitored, to ensure a quick response to any unexpected variable change. 
+
+The final problem that is fundamental to use of microbes in space is how the system will perform in microgravity. The absence of gravity prevents the natural separation of gas and liquid phases, which are necessary in the photoreactor. Injecting gas through liquid in the photoreactor will not provide sufficient separation. The solution proposed was to create artificial gravity (centrifugal force) by rotating the PBR that would allow the separation of the liquid and gas phases, ensuring that the oxygen flow was not restricted. 
+
+\begin{figure}[ht]
+\centering
+\includegraphics{images/6oxygenlevels}
+\caption [\cite{agency2000exemple}]{}
+\label{fig:6oxygenlevels}
+\end{figure}
+
+The x-axis is the time in days, the y-axis (right, grey) is the intensity of the light incident on the PBR and the y-axis (right, black) is the oxygen level. 
+The results provided a strong demonstration that this system is sustainable over a long period. For 21 days, the oxygen supply was maintained at nearly constant level of 20\% (right axis), perfectly sufficient for human consumption. It was also found that the carbon dioxide levels stabilised at 0.15\%, the pressure at 1Atm and the moisture content at 55\%. The successful demonstration of the technology over a long time period offers great promise using microbes in an air revitalising system.  
+
 \section{Edvinas Bit}
 
 Space exploration is inevitable by technologically advanced society. It is not only because of curiosity of humans and the desire to expand boundaries of our current knowledge, but maybe even more important is the fact that our world is finite in space and resources. In today’s industrialised world these resources are consumed very rapidly and it is only the matter of time when the scarcity of natural resources on Earth will be felt. Even though a lot of materials and
@@ -42,8 +207,7 @@ metals can be recycled, the large amount of power is used to do that and radioac
 user of platinum and palladium catalytic converters. Another metal group is rare Earth's metals which are used for magnets, x-rays and MRI scanning systems, TV screens, other electronic devices and for renewable power generators. Also mining these metals destroys environment and natural habitats for other animals on Earth. It is well known that wars are usually fought because of the land and resources that it holds. On the other hand, space holds vast quantities of
 resources which seems infinite compared to just one planet. Inner solar system planets, their moons and asteroids can be exploited.
 
-
-However, resource gathering industries in space would just be the pioneers of all the new industries and businesses, as power plants, research laboratories, habitats for humans, hotels or entertainment parks would also appear. The establishment of such a large scale projects would require huge amounts of material to be exported from Earth to space. However, there are two significant factors inhibiting the establishment of these kinds of projects. First, the cost of launching anything from the surface of the Earth to orbital space remains very high. For example, current launching systems have a cost of 22,000.00 \$ per kilogram of payload for low Earth orbit and from \$16,000.00 to \$50,000.00 for geostationary orbit. Another aspect is that soft landing to other planets and moons and lifting from them requires a lot of energy input. This all leads to the necessity of having all the materials which are required for building and life sustainability in space reachable by hand. This means that there is economical and practical necessity to produce everything on space instead of constantly sending supplies from Earth.
+However, resource gathering industries in space would just be the pioneers of all the new industries and businesses, as power plants, research laboratories, habitats for humans, hotels or entertainment parks would also appear. The establishment of such a large scale projects would require huge amounts of material to be exported from Earth to space. However, there are two significant factors inhibiting the establishment of these kinds of projects. First, the cost of launching anything from the surface of the Earth to orbital space remains very high. For example, current launching systems have a cost of \$ 2,000.00 per kilogram of payload for low Earth orbit and from \$16,000.00 to \$50,000.00 for geostationary orbit. Another aspect is that soft landing to other planets and moons and lifting from them requires a lot of energy input. This all leads to the necessity of having all the materials which are required for building and life sustainability in space reachable by hand. This means that there is economical and practical necessity to produce everything on space instead of constantly sending supplies from Earth.
 
 
 Thanks to the increasing technological advances in biology and biotechnology almost all of the difficulties mentioned can be overcome using microbes. Proteomics, DNA sequencing and genetic engineering opened the doors to vast amounts of applications of microorganisms. As it is possible to include genes or deactivate them inside bacteria genome the new types of bacteria
@@ -358,10 +522,48 @@ A key benefit of vortex separators, in a microgravity environment, is the lack o
 
 The vortex based separator is appropriate, and indeed very effective, for the separation of two phase substances. However, a second important separation process worth investigating is the fractionation of different sized particulates. This could be the separation of microbes from a product of a process undergone in a bioreactor or indeed the separation of particulates from suspension. By sorting microbes from product and waste it would be possible to recycle as many materials as possible. One such application already in use is the automatic change of nutrient solution and the harvesting of cell products in certain cell reactors. 
 
-The exposing of particles to an ultrasonic standing wave causes them to move to pressure nodes or antinodes, ie particles become concentrated at half-wavelength intervals. In a plane stationary field particles will concentrate in uniform planar sheets each separated by a half-wavelength distance. The positioning of particles in such a structure is due to the acoustic radiation force and diffusion.\cite{
+The exposing of particles to an ultrasonic standing wave causes them to move to pressure nodes or antinodes, ie particles become concentrated at half-wavelength intervals. In a plane stationary field particles will concentrate in uniform planar sheets each separated by a half-wavelength distance. The positioning of particles in such a structure is due to the acoustic radiation force and diffusion as shown in \cref{fig:acoust}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=1.0]{images/frac.png}
+\caption{articles Exposed to Acoustic Radiation Force}
+\label{fig:acoust}
+\end{figure}
+
+A fractionation method which can be used for different populations of cells in a mixture is discussed in M. Kumar et als 2004 paper ‘Fractionation of Cell Mixtures Using Acoustic and Laminar Flow Fields’.\cite{kumar2005fractionation} This technology utilizes an ultrasonic field and a laminar flow field in orthogonal directions through a rectangular chamber. The flow carries the cells through a chamber while the ultrasonic field causes the cells to migrate to the mid plane of the chamber at rates related to their size and other physical properties. 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=1.0]{images/separator.png}
+\caption{Microchamber with Standing Wave Allowing Acoustic Fractionation of Particulates}
+\label{fig:separator}
+\end{figure}
+
+\Cref{fig:separator} shows such a separator. As can be seen in a reflector and transducer, where the transducer creates a planar acoustic field, are placed at a half wavelength separation. This allows a nodal point to be positioned at the mid-point of the chamber and will force the walls of the chamber to be antinodes. AN inlet splitter restricts the lateral position of the particulates as they enter the chamber. From the left of the splitter a carrier stream is introduced which should be injected in such a way that it has a laminar flow throughout the channel when the acoustic transducer is not operating. 
+
+Without the presence of the standing waves the particulates would simply travel down the chamber with the only force acting on them coming from the feed and carrier stream.
+As long as the wavelength of this standing wave is large when compared to the size of the particles suspended the primary acoustic force, Fac , is given by \cref{eq:acoustic_force}
+
+
+\begin{equation}
+F_{ac}=4\pi R^3 \kappa E_{ac} F \sin{(2\kappa x)}
+\label{eq:acoustic_force}
+\end{equation}
+
+Where $\kappa$ is the wave number of the applied sound wave, $E_{ac}$ is the energy per unit volume, R is the particle radius, x the position in the fluid relative to an acoustic pressure antinode, F is the acoustic contrast factor, which is given by \cref{eq:contrast}
+
+\begin{equation}
+F=\frac{1}{3}\left[\frac{5\rho_{\rho} - 2\rho_f}{\rho_f+2\rho_{\rho}}-\frac{\gamma_{\rho}}{\gamma_f}\right]
+\label{eq:contrast}
+\end{equation}
+
+Where $\gamma_f$ is the compressibility of the fluid, $\gamma_p$ the compressibility of the particle, $\rho_f$ is the carrier fluid density and $\rho_{\rho}$ is the density of the particle  has been found experimentally, in the absence of exterior forces, those particles with a positive acoustic contrast factor move towards the pressure nodes and particles with a negative acoustic contrast factor move towards pressure nodes.
+At the end of the rectangular chamber a flow splitter divides the cell suspension into two different streams. Hence the cells which respond faster to the acoustic radiation will be divided from the cells that respond slower. Also, the cells with a positive acoustic contrast factor will be separated from those with a negative. With a series of these it would be possible to separate a large number of particulates that have a range of different properties.
+
+This is a relatively simple mechanism when used for a truly spherical particulate. However, when being applied to a cell suspensions more variables need to be taken into account.  Cells are somewhat smaller than polystyrene particles as had been previously used. This causes cells to have a susceptibility to smaller acoustic forces than polystyrene particles. Also cells may not be spherical and may tend to form clusters. The adaptation to suit these needs is discussed in M.Kumar, D.Feke and J.Belovich’s 2004 paper, ‘Fractionation of Cell Mixtures Using Acoustic and Laminar Flow Fields’ 
 
 \section{Conclusion}
-
 \bibliography{microbes}
 \bibliographystyle{unsrt}
 
